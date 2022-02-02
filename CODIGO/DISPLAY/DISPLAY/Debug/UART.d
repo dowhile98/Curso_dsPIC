@@ -1,4 +1,4 @@
-main.d main.o: .././main.c \
+UART.d UART.o: .././UART.c .././UART.h \
  d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\lib\gcc\avr\5.4.0\include\xc.h \
  d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\lib\gcc\avr\5.4.0\include\cci.h \
  d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\avr\include\avr\io.h \
@@ -11,17 +11,9 @@ main.d main.o: .././main.c \
  d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\avr\include\avr\common.h \
  d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\avr\include\avr\version.h \
  d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\avr\include\avr\fuse.h \
- d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\avr\include\avr\lock.h \
- .././KEYPAD.h \
- d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\avr\include\util\delay.h \
- d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\avr\include\util\delay_basic.h \
- d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\avr\include\math.h \
- .././UART.h \
- d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\avr\include\stdio.h \
- d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\lib\gcc\avr\5.4.0\include\stdarg.h \
- d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\lib\gcc\avr\5.4.0\include\stddef.h \
- d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\avr\include\stdlib.h \
- d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\avr\include\string.h
+ d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\avr\include\avr\lock.h
+
+.././UART.h:
 
 d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\lib\gcc\avr\5.4.0\include\xc.h:
 
@@ -48,23 +40,3 @@ d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\avr\include\avr\version.h:
 d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\avr\include\avr\fuse.h:
 
 d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\avr\include\avr\lock.h:
-
-.././KEYPAD.h:
-
-d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\avr\include\util\delay.h:
-
-d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\avr\include\util\delay_basic.h:
-
-d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\avr\include\math.h:
-
-.././UART.h:
-
-d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\avr\include\stdio.h:
-
-d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\lib\gcc\avr\5.4.0\include\stdarg.h:
-
-d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\lib\gcc\avr\5.4.0\include\stddef.h:
-
-d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\avr\include\stdlib.h:
-
-d:\archivos\ de\ programa\microchip\xc8\v2.32\avr\avr\include\string.h:

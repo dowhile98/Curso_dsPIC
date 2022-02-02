@@ -64,7 +64,7 @@ uint8_t Keypad_Read(void){
 		break;      //salida del for
 	}
 	if(col == KEYPAD_EMPTY)
-	return KEYPAD_EMPTY;
+		return KEYPAD_EMPTY;
 	else
-	return(key_table[row][col]);
+		return(key_table[row][col]);
 }

@@ -7,6 +7,11 @@
 
 #include <xc.h>
 #include "KEYPAD.h"
+#include "UART.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 
 #define AD		B , 2
 #define BD		B , 3
@@ -25,20 +30,29 @@ typedef enum{
 	}NumDisplay;
 	
 uint8_t data;
-
+uint8_t buffer[20] = {0};
+uint8_t bufferTx[50];
+uint16_t len;
+uint8_t i;
 void DisplayInit(void);
 void DisplaySet(uint8_t num, NumDisplay display);
 
 int main(void)
 {
+	/*uart init*/
+	UART_Config(DOUBLE_SPEED,9600);
+	len = sprintf((char*)bufferTx,"CONFIGURACION UART0\r\n");
+	UART_SendData(bufferTx,len);
+	/*keypad init*/
 	Keypad_Init();
-	DisplayInit();
+	/*display init*/
+	//DisplayInit();
 	
     while(1)
     {
         //TODO:: Please write your application code 
 		data = Keypad_Read();
-		if(data != KEYPAD_EMPTY){
+		/*if(data != KEYPAD_EMPTY){
 			if(data == '1')
 				DisplaySet(1,DISPLAY1);
 			if(data == '2')
@@ -47,8 +61,27 @@ int main(void)
 				DisplaySet(3,DISPLAY3);
 			if(data == '4')
 				DisplaySet(4,DISPLAY4);
+		}*/
+		if(data != KEYPAD_EMPTY){
+			_delay_ms(100);
+			len = sprintf((char*)bufferTx,"presionado->%c\r\n",data);
+			UART_SendData(bufferTx,len);
+			if(data>=48 && data<= 57){
+				buffer[i] = data;
+				i++;
+			}
+			if(data == 'X'){
+				
+				len = sprintf((char*)bufferTx,"NUMERO INGRESADO->");
+				UART_SendData(bufferTx,len);
+				UART_SendData(buffer,i-1);
+				len = sprintf((char*)bufferTx,"\r\n");
+				UART_SendData(bufferTx,len);
+				memset(buffer,0,i);
+				i = 0;
+			}
 		}
-		_delay_ms(50);
+		_delay_ms(10);
 		
     }
 }

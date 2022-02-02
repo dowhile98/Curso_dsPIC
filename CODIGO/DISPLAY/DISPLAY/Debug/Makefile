@@ -38,7 +38,8 @@ SUBDIRS :=
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
 ../KEYPAD.c \
-../main.c
+../main.c \
+../UART.c
 
 
 PREPROCESSING_SRCS += 
@@ -49,19 +50,23 @@ ASM_SRCS +=
 
 OBJS +=  \
 KEYPAD.o \
-main.o
+main.o \
+UART.o
 
 OBJS_AS_ARGS +=  \
 KEYPAD.o \
-main.o
+main.o \
+UART.o
 
 C_DEPS +=  \
 KEYPAD.d \
-main.d
+main.d \
+UART.d
 
 C_DEPS_AS_ARGS +=  \
 KEYPAD.d \
-main.d
+main.d \
+UART.d
 
 OUTPUT_FILE_PATH +=DISPLAY.elf
 
@@ -85,6 +90,13 @@ LINKER_SCRIPT_DEP+=
 	
 
 ./main.o: .././main.c
+	@echo Building file: $<
+	@echo Invoking: XC8 C Compiler : 2.32
+	$(QUOTE)D:\archivos de programa\Microchip\xc8\v2.32\bin\xc8-cc.exe$(QUOTE)  -mcpu=ATmega328P  -mdfp="D:\archivos de programa\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\xc8"  -c -x c -funsigned-char -funsigned-bitfields -mext=cci -D__ATmega328P__ -DDEBUG  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+./UART.o: .././UART.c
 	@echo Building file: $<
 	@echo Invoking: XC8 C Compiler : 2.32
 	$(QUOTE)D:\archivos de programa\Microchip\xc8\v2.32\bin\xc8-cc.exe$(QUOTE)  -mcpu=ATmega328P  -mdfp="D:\archivos de programa\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\xc8"  -c -x c -funsigned-char -funsigned-bitfields -mext=cci -D__ATmega328P__ -DDEBUG  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 

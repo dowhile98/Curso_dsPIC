@@ -53,7 +53,7 @@
 #define PIN_READ_(a,b)		((PIN ## a >> PIN ## a ## b) & 0x1)
 #define PIN_READ(a)			PIN_READ_(a) 
 
-#define KEYPAD_EMPTY		-1
+#define KEYPAD_EMPTY		0
 #define C1_BIT				PIN_READ(C1)
 #define C2_BIT				PIN_READ(C2)
 #define C3_BIT				PIN_READ(C3)
