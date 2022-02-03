@@ -23,7 +23,7 @@ int main(void)
 {
 	/*PD0-PD3->ENTRADA DIGITAL CON PULL UP*/
 	DDRD &=~(0xF);
-	DDRB |= 0xF;
+	PORTD |= 0xF;
 	/*PB0-PB4-> SALIDA DIGITAL*/
 	DDRB |= 0x1F;
 	
@@ -37,7 +37,7 @@ int main(void)
 		}
 		//a
 		if(a){
-			PORTB &=~ 1u<<SR;		//subida rapida
+			PORTB &=~ (1u<<SR);		//subida rapida
 			PORTB &=~ (1U<<M);		//se apaga el rele
 			PORTB |= 1U<<A;			//AVISO
 			_delay_ms(200);			//DURACION DEL AVISO
@@ -52,8 +52,7 @@ int main(void)
 		}
 		//c
 		if(c){
-			PORTB |= 1U<<M;			//taladro encendido
-			PORTB &=~ 1U<<BL;		//se apaga descenso lento
+			PORTB &=~ (1U<<BL);		//se apaga descenso lento
 			PORTB |= 1u<<SR;		//subida rapida
 			
 		}
