@@ -1,0 +1,2119 @@
+
+SPI.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  00000e2e  2**0
+                  ALLOC, LOAD, DATA
+  1 .text         000000c2  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      0000002f  00000000  00000000  00000e2e  2**0
+                  CONTENTS, READONLY
+  3 .stack.descriptors.hdr 00000038  00000000  00000000  00000e5d  2**0
+                  CONTENTS, READONLY
+  4 .debug_aranges 000001a8  00000000  00000000  00000e95  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00003801  00000000  00000000  0000103d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000b9e  00000000  00000000  0000483e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000012f4  00000000  00000000  000053dc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000680  00000000  00000000  000066d0  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000317  00000000  00000000  00006d50  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00002e19  00000000  00000000  00007067  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000168  00000000  00000000  00009e80  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .text         00000004  00000db6  00000db6  00000e2a  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 13 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00009fe8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .text._swap   00000012  00000d8a  00000d8a  00000dfe  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 15 .text._draw_circle_8 00000096  000007f6  000007f6  0000086a  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 16 .text._draw_h_line 0000002c  00000cda  00000cda  00000d4e  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 17 .text.GUI_Fill 00000056  00000acc  00000acc  00000b40  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 18 .text.GUI_DrawLine 00000136  000004d2  000004d2  00000546  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 19 .text.GUI_DrawRectangle 0000004c  00000b22  00000b22  00000b96  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 20 .text.GUI_FillRectangle 0000000a  00000dac  00000dac  00000e20  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 21 .text.GUI_DrawCircle 000000a0  000006bc  000006bc  00000730  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 22 .text.GUI_FillCircle 000000b4  00000608  00000608  0000067c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 23 .text.GUI_DrawTriangel 0000004a  00000b6e  00000b6e  00000be2  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 24 .text.GUI_FillTriangel 000002c4  000000c2  000000c2  00000136  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 25 .text.SPI_Init 00000032  00000c7a  00000c7a  00000cee  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 26 .text.main    00000074  0000097e  0000097e  000009f2  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 27 .text.SPI_SendReceiveData 00000022  00000d54  00000d54  00000dc8  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 28 .text.SPI_WriteByte 0000002a  00000d06  00000d06  00000d7a  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 29 .text.OLED_WR_Byte 00000024  00000d30  00000d30  00000da4  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 30 .text.OLED_Set_Pixel 0000006a  00000a62  00000a62  00000ad6  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 31 .text.OLED_Display 00000070  000009f2  000009f2  00000a66  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 32 .text.OLED_Reset 00000038  00000c42  00000c42  00000cb6  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 33 .text.OLED_Init_GPIO 00000014  00000d76  00000d76  00000dea  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 34 .text.OLED_Init 0000014c  00000386  00000386  000003fa  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 35 .bss.OLED_buffer 00000400  00800100  00800100  00000e2e  2**0
+                  ALLOC
+ 36 .text.Test_Color 00000046  00000bb8  00000bb8  00000c2c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 37 .text.Test_Rectangular 0000007c  0000088c  0000088c  00000900  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 38 .text.Test_Circle 00000076  00000908  00000908  0000097c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 39 .text.Test_Triangle 0000009a  0000075c  0000075c  000007d0  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 40 .text.libgcc.div 00000044  00000bfe  00000bfe  00000c72  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 41 .text.libgcc.div 0000002e  00000cac  00000cac  00000d20  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 42 .text.libgcc.div 00000010  00000d9c  00000d9c  00000e10  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 37 00 	jmp	0x6e	; 0x6e <__ctors_end>
+   4:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+   8:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+   c:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+  10:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+  14:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+  18:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+  1c:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+  20:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+  24:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+  28:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+  2c:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+  30:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+  34:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+  38:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+  3c:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+  40:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+  44:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+  48:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+  4c:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+  50:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+  54:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+  58:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+  5c:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+  60:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+  64:	0c 94 db 06 	jmp	0xdb6	; 0xdb6 <__bad_interrupt>
+
+00000068 <.dinit>:
+  68:	01 00       	.word	0x0001	; ????
+  6a:	05 00       	.word	0x0005	; ????
+  6c:	80 00       	.word	0x0080	; ????
+
+0000006e <__ctors_end>:
+  6e:	11 24       	eor	r1, r1
+  70:	1f be       	out	0x3f, r1	; 63
+  72:	cf ef       	ldi	r28, 0xFF	; 255
+  74:	d8 e0       	ldi	r29, 0x08	; 8
+  76:	de bf       	out	0x3e, r29	; 62
+  78:	cd bf       	out	0x3d, r28	; 61
+
+0000007a <__do_copy_data>:
+  7a:	e8 e6       	ldi	r30, 0x68	; 104
+  7c:	f0 e0       	ldi	r31, 0x00	; 0
+  7e:	40 e0       	ldi	r20, 0x00	; 0
+  80:	17 c0       	rjmp	.+46     	; 0xb0 <__do_clear_bss+0x8>
+  82:	b5 91       	lpm	r27, Z+
+  84:	a5 91       	lpm	r26, Z+
+  86:	35 91       	lpm	r19, Z+
+  88:	25 91       	lpm	r18, Z+
+  8a:	05 91       	lpm	r16, Z+
+  8c:	07 fd       	sbrc	r16, 7
+  8e:	0c c0       	rjmp	.+24     	; 0xa8 <__do_clear_bss>
+  90:	95 91       	lpm	r25, Z+
+  92:	85 91       	lpm	r24, Z+
+  94:	ef 01       	movw	r28, r30
+  96:	f9 2f       	mov	r31, r25
+  98:	e8 2f       	mov	r30, r24
+  9a:	05 90       	lpm	r0, Z+
+  9c:	0d 92       	st	X+, r0
+  9e:	a2 17       	cp	r26, r18
+  a0:	b3 07       	cpc	r27, r19
+  a2:	d9 f7       	brne	.-10     	; 0x9a <__do_copy_data+0x20>
+  a4:	fe 01       	movw	r30, r28
+  a6:	04 c0       	rjmp	.+8      	; 0xb0 <__do_clear_bss+0x8>
+
+000000a8 <__do_clear_bss>:
+  a8:	1d 92       	st	X+, r1
+  aa:	a2 17       	cp	r26, r18
+  ac:	b3 07       	cpc	r27, r19
+  ae:	e1 f7       	brne	.-8      	; 0xa8 <__do_clear_bss>
+  b0:	ed 36       	cpi	r30, 0x6D	; 109
+  b2:	f4 07       	cpc	r31, r20
+  b4:	31 f7       	brne	.-52     	; 0x82 <__do_copy_data+0x8>
+  b6:	0e 94 bf 04 	call	0x97e	; 0x97e <main>
+  ba:	0c 94 5f 00 	jmp	0xbe	; 0xbe <_exit>
+
+000000be <_exit>:
+  be:	f8 94       	cli
+
+000000c0 <__stop_program>:
+  c0:	ff cf       	rjmp	.-2      	; 0xc0 <__stop_program>
+
+Disassembly of section .text:
+
+00000db6 <__bad_interrupt>:
+ db6:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+Disassembly of section .text._swap:
+
+00000d8a <_swap>:
+ * @retvalue   :None
+******************************************************************************/  
+static void _swap(u8 *a, u8 *b)
+{
+	u16 tmp;
+  tmp = *a;
+ d8a:	fc 01       	movw	r30, r24
+ d8c:	20 81       	ld	r18, Z
+	*a = *b;
+ d8e:	fb 01       	movw	r30, r22
+ d90:	30 81       	ld	r19, Z
+ d92:	fc 01       	movw	r30, r24
+ d94:	30 83       	st	Z, r19
+	*b = tmp;
+ d96:	fb 01       	movw	r30, r22
+ d98:	20 83       	st	Z, r18
+ d9a:	08 95       	ret
+
+Disassembly of section .text._draw_circle_8:
+
+000007f6 <_draw_circle_8>:
+ * @retvalue   :None
+********************************************************************/
+void GUI_DrawPoint(u8 x,u8 y,u8 color)
+{
+	OLED_Set_Pixel(x,y,color);
+	OLED_Display();
+ 7f6:	cf 92       	push	r12
+ 7f8:	df 92       	push	r13
+ 7fa:	ef 92       	push	r14
+ 7fc:	ff 92       	push	r15
+ 7fe:	0f 93       	push	r16
+ 800:	1f 93       	push	r17
+ 802:	cf 93       	push	r28
+ 804:	df 93       	push	r29
+ 806:	c8 2f       	mov	r28, r24
+ 808:	d6 2f       	mov	r29, r22
+ 80a:	14 2f       	mov	r17, r20
+ 80c:	f2 2e       	mov	r15, r18
+ 80e:	d6 2e       	mov	r13, r22
+ 810:	d2 0e       	add	r13, r18
+ 812:	c8 2e       	mov	r12, r24
+ 814:	c4 0e       	add	r12, r20
+ 816:	40 2f       	mov	r20, r16
+ 818:	6d 2d       	mov	r22, r13
+ 81a:	8c 2d       	mov	r24, r12
+ 81c:	0e 94 31 05 	call	0xa62	; 0xa62 <OLED_Set_Pixel>
+ 820:	ec 2e       	mov	r14, r28
+ 822:	e1 1a       	sub	r14, r17
+ 824:	40 2f       	mov	r20, r16
+ 826:	6d 2d       	mov	r22, r13
+ 828:	8e 2d       	mov	r24, r14
+ 82a:	0e 94 31 05 	call	0xa62	; 0xa62 <OLED_Set_Pixel>
+ 82e:	dd 2e       	mov	r13, r29
+ 830:	df 18       	sub	r13, r15
+ 832:	40 2f       	mov	r20, r16
+ 834:	6d 2d       	mov	r22, r13
+ 836:	8c 2d       	mov	r24, r12
+ 838:	0e 94 31 05 	call	0xa62	; 0xa62 <OLED_Set_Pixel>
+ 83c:	40 2f       	mov	r20, r16
+ 83e:	6d 2d       	mov	r22, r13
+ 840:	8e 2d       	mov	r24, r14
+ 842:	0e 94 31 05 	call	0xa62	; 0xa62 <OLED_Set_Pixel>
+ 846:	dd 2e       	mov	r13, r29
+ 848:	d1 0e       	add	r13, r17
+ 84a:	ef 2c       	mov	r14, r15
+ 84c:	ec 0e       	add	r14, r28
+ 84e:	40 2f       	mov	r20, r16
+ 850:	6d 2d       	mov	r22, r13
+ 852:	8e 2d       	mov	r24, r14
+ 854:	0e 94 31 05 	call	0xa62	; 0xa62 <OLED_Set_Pixel>
+ 858:	cf 19       	sub	r28, r15
+ 85a:	40 2f       	mov	r20, r16
+ 85c:	6d 2d       	mov	r22, r13
+ 85e:	8c 2f       	mov	r24, r28
+ 860:	0e 94 31 05 	call	0xa62	; 0xa62 <OLED_Set_Pixel>
+ 864:	d1 1b       	sub	r29, r17
+ 866:	40 2f       	mov	r20, r16
+ 868:	6d 2f       	mov	r22, r29
+ 86a:	8e 2d       	mov	r24, r14
+ 86c:	0e 94 31 05 	call	0xa62	; 0xa62 <OLED_Set_Pixel>
+ 870:	40 2f       	mov	r20, r16
+ 872:	6d 2f       	mov	r22, r29
+ 874:	8c 2f       	mov	r24, r28
+ 876:	0e 94 31 05 	call	0xa62	; 0xa62 <OLED_Set_Pixel>
+ 87a:	df 91       	pop	r29
+ 87c:	cf 91       	pop	r28
+ 87e:	1f 91       	pop	r17
+ 880:	0f 91       	pop	r16
+ 882:	ff 90       	pop	r15
+ 884:	ef 90       	pop	r14
+ 886:	df 90       	pop	r13
+ 888:	cf 90       	pop	r12
+ 88a:	08 95       	ret
+
+Disassembly of section .text._draw_h_line:
+
+00000cda <_draw_h_line>:
+								      1-white
+											0-black	
+ * @retvalue   :None
+******************************************************************************/
+static void _draw_h_line(u8 x0,u8 x1,u8 y,u8 color)
+{
+ cda:	0f 93       	push	r16
+ cdc:	1f 93       	push	r17
+ cde:	cf 93       	push	r28
+ ce0:	df 93       	push	r29
+ ce2:	c8 2f       	mov	r28, r24
+ ce4:	d6 2f       	mov	r29, r22
+ ce6:	04 2f       	mov	r16, r20
+ ce8:	12 2f       	mov	r17, r18
+	u8 i=0;
+	for(i=x0;i<=x1;i++)
+ cea:	06 c0       	rjmp	.+12     	; 0xcf8 <_draw_h_line+0x1e>
+	{
+		OLED_Set_Pixel(i, y, color);
+ cec:	41 2f       	mov	r20, r17
+ cee:	60 2f       	mov	r22, r16
+ cf0:	8c 2f       	mov	r24, r28
+ cf2:	0e 94 31 05 	call	0xa62	; 0xa62 <OLED_Set_Pixel>
+ * @retvalue   :None
+******************************************************************************/
+static void _draw_h_line(u8 x0,u8 x1,u8 y,u8 color)
+{
+	u8 i=0;
+	for(i=x0;i<=x1;i++)
+ cf6:	cf 5f       	subi	r28, 0xFF	; 255
+ cf8:	dc 17       	cp	r29, r28
+ cfa:	c0 f7       	brcc	.-16     	; 0xcec <_draw_h_line+0x12>
+	{
+		OLED_Set_Pixel(i, y, color);
+	}
+}
+ cfc:	df 91       	pop	r29
+ cfe:	cf 91       	pop	r28
+ d00:	1f 91       	pop	r17
+ d02:	0f 91       	pop	r16
+ d04:	08 95       	ret
+
+Disassembly of section .text.GUI_Fill:
+
+00000acc <GUI_Fill>:
+								      1-white
+											0-black
+ * @retvalue   :None
+********************************************************************/
+void GUI_Fill(u8 sx,u8 sy,u8 ex,u8 ey,u8 color)
+{  	
+ acc:	df 92       	push	r13
+ ace:	ef 92       	push	r14
+ ad0:	ff 92       	push	r15
+ ad2:	0f 93       	push	r16
+ ad4:	1f 93       	push	r17
+ ad6:	cf 93       	push	r28
+ ad8:	df 93       	push	r29
+ ada:	e8 2e       	mov	r14, r24
+ adc:	f6 2e       	mov	r15, r22
+	u8 i,j;			
+	u8 width=ex-sx+1; 		//得到填充的宽度
+ ade:	48 1b       	sub	r20, r24
+ ae0:	11 e0       	ldi	r17, 0x01	; 1
+ ae2:	14 0f       	add	r17, r20
+	u8 height=ey-sy+1;		//高度
+ ae4:	26 1b       	sub	r18, r22
+ ae6:	dd 24       	eor	r13, r13
+ ae8:	d3 94       	inc	r13
+ aea:	d2 0e       	add	r13, r18
+	for(i=0;i<height;i++)
+ aec:	d0 e0       	ldi	r29, 0x00	; 0
+ aee:	0d c0       	rjmp	.+26     	; 0xb0a <GUI_Fill+0x3e>
+	{
+		for(j=0;j<width;j++)
+		{
+				OLED_Set_Pixel(sx+j, sy+i,color);
+ af0:	40 2f       	mov	r20, r16
+ af2:	6d 2f       	mov	r22, r29
+ af4:	6f 0d       	add	r22, r15
+ af6:	8c 2f       	mov	r24, r28
+ af8:	8e 0d       	add	r24, r14
+ afa:	0e 94 31 05 	call	0xa62	; 0xa62 <OLED_Set_Pixel>
+	u8 i,j;			
+	u8 width=ex-sx+1; 		//得到填充的宽度
+	u8 height=ey-sy+1;		//高度
+	for(i=0;i<height;i++)
+	{
+		for(j=0;j<width;j++)
+ afe:	cf 5f       	subi	r28, 0xFF	; 255
+ b00:	01 c0       	rjmp	.+2      	; 0xb04 <GUI_Fill+0x38>
+ b02:	c0 e0       	ldi	r28, 0x00	; 0
+ b04:	c1 17       	cp	r28, r17
+ b06:	a0 f3       	brcs	.-24     	; 0xaf0 <GUI_Fill+0x24>
+void GUI_Fill(u8 sx,u8 sy,u8 ex,u8 ey,u8 color)
+{  	
+	u8 i,j;			
+	u8 width=ex-sx+1; 		//得到填充的宽度
+	u8 height=ey-sy+1;		//高度
+	for(i=0;i<height;i++)
+ b08:	df 5f       	subi	r29, 0xFF	; 255
+ b0a:	dd 15       	cp	r29, r13
+ b0c:	d0 f3       	brcs	.-12     	; 0xb02 <GUI_Fill+0x36>
+		for(j=0;j<width;j++)
+		{
+				OLED_Set_Pixel(sx+j, sy+i,color);
+		}		
+	}
+	OLED_Display();
+ b0e:	0e 94 f9 04 	call	0x9f2	; 0x9f2 <OLED_Display>
+}
+ b12:	df 91       	pop	r29
+ b14:	cf 91       	pop	r28
+ b16:	1f 91       	pop	r17
+ b18:	0f 91       	pop	r16
+ b1a:	ff 90       	pop	r15
+ b1c:	ef 90       	pop	r14
+ b1e:	df 90       	pop	r13
+ b20:	08 95       	ret
+
+Disassembly of section .text.GUI_DrawLine:
+
+000004d2 <GUI_DrawLine>:
+ * @retvalue   :None
+********************************************************************/
+void GUI_DrawPoint(u8 x,u8 y,u8 color)
+{
+	OLED_Set_Pixel(x,y,color);
+	OLED_Display();
+ 4d2:	2f 92       	push	r2
+ 4d4:	3f 92       	push	r3
+ 4d6:	4f 92       	push	r4
+ 4d8:	5f 92       	push	r5
+ 4da:	6f 92       	push	r6
+ 4dc:	7f 92       	push	r7
+ 4de:	8f 92       	push	r8
+ 4e0:	9f 92       	push	r9
+ 4e2:	af 92       	push	r10
+ 4e4:	bf 92       	push	r11
+ 4e6:	cf 92       	push	r12
+ 4e8:	df 92       	push	r13
+ 4ea:	ef 92       	push	r14
+ 4ec:	ff 92       	push	r15
+ 4ee:	0f 93       	push	r16
+ 4f0:	1f 93       	push	r17
+ 4f2:	cf 93       	push	r28
+ 4f4:	df 93       	push	r29
+ 4f6:	00 d0       	rcall	.+0      	; 0x4f8 <GUI_DrawLine+0x26>
+ 4f8:	00 d0       	rcall	.+0      	; 0x4fa <GUI_DrawLine+0x28>
+ 4fa:	1f 92       	push	r1
+ 4fc:	cd b7       	in	r28, 0x3d	; 61
+ 4fe:	de b7       	in	r29, 0x3e	; 62
+ 500:	09 83       	std	Y+1, r16	; 0x01
+ 502:	44 2e       	mov	r4, r20
+ 504:	51 2c       	mov	r5, r1
+ 506:	c8 2e       	mov	r12, r24
+ 508:	d1 2c       	mov	r13, r1
+ 50a:	4c 18       	sub	r4, r12
+ 50c:	5d 08       	sbc	r5, r13
+ 50e:	62 2e       	mov	r6, r18
+ 510:	71 2c       	mov	r7, r1
+ 512:	a6 2e       	mov	r10, r22
+ 514:	b1 2c       	mov	r11, r1
+ 516:	6a 18       	sub	r6, r10
+ 518:	7b 08       	sbc	r7, r11
+ 51a:	14 14       	cp	r1, r4
+ 51c:	15 04       	cpc	r1, r5
+ 51e:	5c f0       	brlt	.+22     	; 0x536 <GUI_DrawLine+0x64>
+ 520:	41 14       	cp	r4, r1
+ 522:	51 04       	cpc	r5, r1
+ 524:	69 f0       	breq	.+26     	; 0x540 <GUI_DrawLine+0x6e>
+ 526:	51 94       	neg	r5
+ 528:	41 94       	neg	r4
+ 52a:	51 08       	sbc	r5, r1
+ 52c:	8f ef       	ldi	r24, 0xFF	; 255
+ 52e:	9f ef       	ldi	r25, 0xFF	; 255
+ 530:	9b 83       	std	Y+3, r25	; 0x03
+ 532:	8a 83       	std	Y+2, r24	; 0x02
+ 534:	07 c0       	rjmp	.+14     	; 0x544 <GUI_DrawLine+0x72>
+ 536:	81 e0       	ldi	r24, 0x01	; 1
+ 538:	90 e0       	ldi	r25, 0x00	; 0
+ 53a:	9b 83       	std	Y+3, r25	; 0x03
+ 53c:	8a 83       	std	Y+2, r24	; 0x02
+ 53e:	02 c0       	rjmp	.+4      	; 0x544 <GUI_DrawLine+0x72>
+ 540:	1b 82       	std	Y+3, r1	; 0x03
+ 542:	1a 82       	std	Y+2, r1	; 0x02
+ 544:	16 14       	cp	r1, r6
+ 546:	17 04       	cpc	r1, r7
+ 548:	54 f0       	brlt	.+20     	; 0x55e <GUI_DrawLine+0x8c>
+ 54a:	61 14       	cp	r6, r1
+ 54c:	71 04       	cpc	r7, r1
+ 54e:	59 f0       	breq	.+22     	; 0x566 <GUI_DrawLine+0x94>
+ 550:	71 94       	neg	r7
+ 552:	61 94       	neg	r6
+ 554:	71 08       	sbc	r7, r1
+ 556:	22 24       	eor	r2, r2
+ 558:	2a 94       	dec	r2
+ 55a:	32 2c       	mov	r3, r2
+ 55c:	06 c0       	rjmp	.+12     	; 0x56a <GUI_DrawLine+0x98>
+ 55e:	22 24       	eor	r2, r2
+ 560:	23 94       	inc	r2
+ 562:	31 2c       	mov	r3, r1
+ 564:	02 c0       	rjmp	.+4      	; 0x56a <GUI_DrawLine+0x98>
+ 566:	21 2c       	mov	r2, r1
+ 568:	31 2c       	mov	r3, r1
+ 56a:	64 14       	cp	r6, r4
+ 56c:	75 04       	cpc	r7, r5
+ 56e:	1c f4       	brge	.+6      	; 0x576 <GUI_DrawLine+0xa4>
+ 570:	5d 82       	std	Y+5, r5	; 0x05
+ 572:	4c 82       	std	Y+4, r4	; 0x04
+ 574:	02 c0       	rjmp	.+4      	; 0x57a <GUI_DrawLine+0xa8>
+ 576:	7d 82       	std	Y+5, r7	; 0x05
+ 578:	6c 82       	std	Y+4, r6	; 0x04
+ 57a:	e1 2c       	mov	r14, r1
+ 57c:	f1 2c       	mov	r15, r1
+ 57e:	00 e0       	ldi	r16, 0x00	; 0
+ 580:	10 e0       	ldi	r17, 0x00	; 0
+ 582:	81 2c       	mov	r8, r1
+ 584:	91 2c       	mov	r9, r1
+ 586:	20 c0       	rjmp	.+64     	; 0x5c8 <GUI_DrawLine+0xf6>
+ 588:	49 81       	ldd	r20, Y+1	; 0x01
+ 58a:	6a 2d       	mov	r22, r10
+ 58c:	8c 2d       	mov	r24, r12
+ 58e:	0e 94 31 05 	call	0xa62	; 0xa62 <OLED_Set_Pixel>
+ 592:	04 0d       	add	r16, r4
+ 594:	15 1d       	adc	r17, r5
+ 596:	e6 0c       	add	r14, r6
+ 598:	f7 1c       	adc	r15, r7
+ 59a:	8c 81       	ldd	r24, Y+4	; 0x04
+ 59c:	9d 81       	ldd	r25, Y+5	; 0x05
+ 59e:	80 17       	cp	r24, r16
+ 5a0:	91 07       	cpc	r25, r17
+ 5a2:	34 f4       	brge	.+12     	; 0x5b0 <GUI_DrawLine+0xde>
+ 5a4:	08 1b       	sub	r16, r24
+ 5a6:	19 0b       	sbc	r17, r25
+ 5a8:	8a 81       	ldd	r24, Y+2	; 0x02
+ 5aa:	9b 81       	ldd	r25, Y+3	; 0x03
+ 5ac:	c8 0e       	add	r12, r24
+ 5ae:	d9 1e       	adc	r13, r25
+ 5b0:	8c 81       	ldd	r24, Y+4	; 0x04
+ 5b2:	9d 81       	ldd	r25, Y+5	; 0x05
+ 5b4:	8e 15       	cp	r24, r14
+ 5b6:	9f 05       	cpc	r25, r15
+ 5b8:	24 f4       	brge	.+8      	; 0x5c2 <GUI_DrawLine+0xf0>
+ 5ba:	e8 1a       	sub	r14, r24
+ 5bc:	f9 0a       	sbc	r15, r25
+ 5be:	a2 0c       	add	r10, r2
+ 5c0:	b3 1c       	adc	r11, r3
+ 5c2:	9f ef       	ldi	r25, 0xFF	; 255
+ 5c4:	89 1a       	sub	r8, r25
+ 5c6:	99 0a       	sbc	r9, r25
+ 5c8:	8c 81       	ldd	r24, Y+4	; 0x04
+ 5ca:	9d 81       	ldd	r25, Y+5	; 0x05
+ 5cc:	01 96       	adiw	r24, 0x01	; 1
+ 5ce:	88 15       	cp	r24, r8
+ 5d0:	99 05       	cpc	r25, r9
+ 5d2:	d0 f6       	brcc	.-76     	; 0x588 <GUI_DrawLine+0xb6>
+ 5d4:	0e 94 f9 04 	call	0x9f2	; 0x9f2 <OLED_Display>
+ 5d8:	0f 90       	pop	r0
+ 5da:	0f 90       	pop	r0
+ 5dc:	0f 90       	pop	r0
+ 5de:	0f 90       	pop	r0
+ 5e0:	0f 90       	pop	r0
+ 5e2:	df 91       	pop	r29
+ 5e4:	cf 91       	pop	r28
+ 5e6:	1f 91       	pop	r17
+ 5e8:	0f 91       	pop	r16
+ 5ea:	ff 90       	pop	r15
+ 5ec:	ef 90       	pop	r14
+ 5ee:	df 90       	pop	r13
+ 5f0:	cf 90       	pop	r12
+ 5f2:	bf 90       	pop	r11
+ 5f4:	af 90       	pop	r10
+ 5f6:	9f 90       	pop	r9
+ 5f8:	8f 90       	pop	r8
+ 5fa:	7f 90       	pop	r7
+ 5fc:	6f 90       	pop	r6
+ 5fe:	5f 90       	pop	r5
+ 600:	4f 90       	pop	r4
+ 602:	3f 90       	pop	r3
+ 604:	2f 90       	pop	r2
+ 606:	08 95       	ret
+
+Disassembly of section .text.GUI_DrawRectangle:
+
+00000b22 <GUI_DrawRectangle>:
+								      1-white
+											0-black							  
+ * @retvalue   :None
+******************************************************************************/
+void GUI_DrawRectangle(u8 x1, u8 y1, u8 x2, u8 y2,u8 color)
+{
+ b22:	ef 92       	push	r14
+ b24:	ff 92       	push	r15
+ b26:	0f 93       	push	r16
+ b28:	1f 93       	push	r17
+ b2a:	cf 93       	push	r28
+ b2c:	df 93       	push	r29
+ b2e:	e8 2e       	mov	r14, r24
+ b30:	d6 2f       	mov	r29, r22
+ b32:	c4 2f       	mov	r28, r20
+ b34:	12 2f       	mov	r17, r18
+	GUI_DrawLine(x1,y1,x2,y1,color);
+ b36:	26 2f       	mov	r18, r22
+ b38:	0e 94 69 02 	call	0x4d2	; 0x4d2 <GUI_DrawLine>
+	GUI_DrawLine(x1,y1,x1,y2,color);
+ b3c:	21 2f       	mov	r18, r17
+ b3e:	4e 2d       	mov	r20, r14
+ b40:	6d 2f       	mov	r22, r29
+ b42:	8e 2d       	mov	r24, r14
+ b44:	0e 94 69 02 	call	0x4d2	; 0x4d2 <GUI_DrawLine>
+	GUI_DrawLine(x1,y2,x2,y2,color);
+ b48:	21 2f       	mov	r18, r17
+ b4a:	4c 2f       	mov	r20, r28
+ b4c:	61 2f       	mov	r22, r17
+ b4e:	8e 2d       	mov	r24, r14
+ b50:	0e 94 69 02 	call	0x4d2	; 0x4d2 <GUI_DrawLine>
+	GUI_DrawLine(x2,y1,x2,y2,color);
+ b54:	21 2f       	mov	r18, r17
+ b56:	4c 2f       	mov	r20, r28
+ b58:	6d 2f       	mov	r22, r29
+ b5a:	8c 2f       	mov	r24, r28
+ b5c:	0e 94 69 02 	call	0x4d2	; 0x4d2 <GUI_DrawLine>
+}  
+ b60:	df 91       	pop	r29
+ b62:	cf 91       	pop	r28
+ b64:	1f 91       	pop	r17
+ b66:	0f 91       	pop	r16
+ b68:	ff 90       	pop	r15
+ b6a:	ef 90       	pop	r14
+ b6c:	08 95       	ret
+
+Disassembly of section .text.GUI_FillRectangle:
+
+00000dac <GUI_FillRectangle>:
+								      1-white
+											0-black	
+ * @retvalue   :None
+******************************************************************************/  
+void GUI_FillRectangle(u8 x1, u8 y1, u8 x2, u8 y2,u8 color)
+{
+ dac:	0f 93       	push	r16
+	GUI_Fill(x1,y1,x2,y2,color);
+ dae:	0e 94 66 05 	call	0xacc	; 0xacc <GUI_Fill>
+}
+ db2:	0f 91       	pop	r16
+ db4:	08 95       	ret
+
+Disassembly of section .text.GUI_DrawCircle:
+
+000006bc <GUI_DrawCircle>:
+ * @retvalue   :None
+********************************************************************/
+void GUI_DrawPoint(u8 x,u8 y,u8 color)
+{
+	OLED_Set_Pixel(x,y,color);
+	OLED_Display();
+ 6bc:	af 92       	push	r10
+ 6be:	bf 92       	push	r11
+ 6c0:	cf 92       	push	r12
+ 6c2:	df 92       	push	r13
+ 6c4:	ef 92       	push	r14
+ 6c6:	ff 92       	push	r15
+ 6c8:	0f 93       	push	r16
+ 6ca:	1f 93       	push	r17
+ 6cc:	cf 93       	push	r28
+ 6ce:	df 93       	push	r29
+ 6d0:	a8 2e       	mov	r10, r24
+ 6d2:	b6 2e       	mov	r11, r22
+ 6d4:	14 2f       	mov	r17, r20
+ 6d6:	e2 2e       	mov	r14, r18
+ 6d8:	f1 2c       	mov	r15, r1
+ 6da:	97 01       	movw	r18, r14
+ 6dc:	22 0f       	add	r18, r18
+ 6de:	33 1f       	adc	r19, r19
+ 6e0:	83 e0       	ldi	r24, 0x03	; 3
+ 6e2:	90 e0       	ldi	r25, 0x00	; 0
+ 6e4:	6c 01       	movw	r12, r24
+ 6e6:	c2 1a       	sub	r12, r18
+ 6e8:	d3 0a       	sbc	r13, r19
+ 6ea:	c0 e0       	ldi	r28, 0x00	; 0
+ 6ec:	d0 e0       	ldi	r29, 0x00	; 0
+ 6ee:	26 c0       	rjmp	.+76     	; 0x73c <GUI_DrawCircle+0x80>
+ 6f0:	01 2f       	mov	r16, r17
+ 6f2:	2e 2d       	mov	r18, r14
+ 6f4:	4c 2f       	mov	r20, r28
+ 6f6:	6b 2d       	mov	r22, r11
+ 6f8:	8a 2d       	mov	r24, r10
+ 6fa:	0e 94 fb 03 	call	0x7f6	; 0x7f6 <_draw_circle_8>
+ 6fe:	dd 20       	and	r13, r13
+ 700:	64 f4       	brge	.+24     	; 0x71a <GUI_DrawCircle+0x5e>
+ 702:	ce 01       	movw	r24, r28
+ 704:	88 0f       	add	r24, r24
+ 706:	99 1f       	adc	r25, r25
+ 708:	88 0f       	add	r24, r24
+ 70a:	99 1f       	adc	r25, r25
+ 70c:	8c 0d       	add	r24, r12
+ 70e:	9d 1d       	adc	r25, r13
+ 710:	6c 01       	movw	r12, r24
+ 712:	26 e0       	ldi	r18, 0x06	; 6
+ 714:	c2 0e       	add	r12, r18
+ 716:	d1 1c       	adc	r13, r1
+ 718:	10 c0       	rjmp	.+32     	; 0x73a <GUI_DrawCircle+0x7e>
+ 71a:	ce 01       	movw	r24, r28
+ 71c:	8e 19       	sub	r24, r14
+ 71e:	9f 09       	sbc	r25, r15
+ 720:	88 0f       	add	r24, r24
+ 722:	99 1f       	adc	r25, r25
+ 724:	88 0f       	add	r24, r24
+ 726:	99 1f       	adc	r25, r25
+ 728:	8c 0d       	add	r24, r12
+ 72a:	9d 1d       	adc	r25, r13
+ 72c:	6c 01       	movw	r12, r24
+ 72e:	2a e0       	ldi	r18, 0x0A	; 10
+ 730:	c2 0e       	add	r12, r18
+ 732:	d1 1c       	adc	r13, r1
+ 734:	81 e0       	ldi	r24, 0x01	; 1
+ 736:	e8 1a       	sub	r14, r24
+ 738:	f1 08       	sbc	r15, r1
+ 73a:	21 96       	adiw	r28, 0x01	; 1
+ 73c:	ec 16       	cp	r14, r28
+ 73e:	fd 06       	cpc	r15, r29
+ 740:	bc f6       	brge	.-82     	; 0x6f0 <GUI_DrawCircle+0x34>
+ 742:	0e 94 f9 04 	call	0x9f2	; 0x9f2 <OLED_Display>
+ 746:	df 91       	pop	r29
+ 748:	cf 91       	pop	r28
+ 74a:	1f 91       	pop	r17
+ 74c:	0f 91       	pop	r16
+ 74e:	ff 90       	pop	r15
+ 750:	ef 90       	pop	r14
+ 752:	df 90       	pop	r13
+ 754:	cf 90       	pop	r12
+ 756:	bf 90       	pop	r11
+ 758:	af 90       	pop	r10
+ 75a:	08 95       	ret
+
+Disassembly of section .text.GUI_FillCircle:
+
+00000608 <GUI_FillCircle>:
+ 608:	8f 92       	push	r8
+ 60a:	9f 92       	push	r9
+ 60c:	af 92       	push	r10
+ 60e:	bf 92       	push	r11
+ 610:	cf 92       	push	r12
+ 612:	df 92       	push	r13
+ 614:	ef 92       	push	r14
+ 616:	ff 92       	push	r15
+ 618:	0f 93       	push	r16
+ 61a:	1f 93       	push	r17
+ 61c:	cf 93       	push	r28
+ 61e:	df 93       	push	r29
+ 620:	a8 2e       	mov	r10, r24
+ 622:	b6 2e       	mov	r11, r22
+ 624:	14 2f       	mov	r17, r20
+ 626:	c2 2e       	mov	r12, r18
+ 628:	d1 2c       	mov	r13, r1
+ 62a:	c6 01       	movw	r24, r12
+ 62c:	88 0f       	add	r24, r24
+ 62e:	99 1f       	adc	r25, r25
+ 630:	23 e0       	ldi	r18, 0x03	; 3
+ 632:	30 e0       	ldi	r19, 0x00	; 0
+ 634:	49 01       	movw	r8, r18
+ 636:	88 1a       	sub	r8, r24
+ 638:	99 0a       	sbc	r9, r25
+ 63a:	e1 2c       	mov	r14, r1
+ 63c:	f1 2c       	mov	r15, r1
+ 63e:	2c c0       	rjmp	.+88     	; 0x698 <GUI_FillCircle+0x90>
+ 640:	01 2f       	mov	r16, r17
+ 642:	2c 2f       	mov	r18, r28
+ 644:	4e 2d       	mov	r20, r14
+ 646:	6b 2d       	mov	r22, r11
+ 648:	8a 2d       	mov	r24, r10
+ 64a:	0e 94 fb 03 	call	0x7f6	; 0x7f6 <_draw_circle_8>
+ 64e:	21 96       	adiw	r28, 0x01	; 1
+ 650:	01 c0       	rjmp	.+2      	; 0x654 <GUI_FillCircle+0x4c>
+ 652:	e7 01       	movw	r28, r14
+ 654:	cc 16       	cp	r12, r28
+ 656:	dd 06       	cpc	r13, r29
+ 658:	9c f7       	brge	.-26     	; 0x640 <GUI_FillCircle+0x38>
+ 65a:	99 20       	and	r9, r9
+ 65c:	5c f4       	brge	.+22     	; 0x674 <GUI_FillCircle+0x6c>
+ 65e:	c7 01       	movw	r24, r14
+ 660:	88 0f       	add	r24, r24
+ 662:	99 1f       	adc	r25, r25
+ 664:	88 0f       	add	r24, r24
+ 666:	99 1f       	adc	r25, r25
+ 668:	88 0e       	add	r8, r24
+ 66a:	99 1e       	adc	r9, r25
+ 66c:	86 e0       	ldi	r24, 0x06	; 6
+ 66e:	88 0e       	add	r8, r24
+ 670:	91 1c       	adc	r9, r1
+ 672:	0f c0       	rjmp	.+30     	; 0x692 <GUI_FillCircle+0x8a>
+ 674:	c7 01       	movw	r24, r14
+ 676:	8c 19       	sub	r24, r12
+ 678:	9d 09       	sbc	r25, r13
+ 67a:	88 0f       	add	r24, r24
+ 67c:	99 1f       	adc	r25, r25
+ 67e:	88 0f       	add	r24, r24
+ 680:	99 1f       	adc	r25, r25
+ 682:	88 0e       	add	r8, r24
+ 684:	99 1e       	adc	r9, r25
+ 686:	8a e0       	ldi	r24, 0x0A	; 10
+ 688:	88 0e       	add	r8, r24
+ 68a:	91 1c       	adc	r9, r1
+ 68c:	81 e0       	ldi	r24, 0x01	; 1
+ 68e:	c8 1a       	sub	r12, r24
+ 690:	d1 08       	sbc	r13, r1
+ 692:	8f ef       	ldi	r24, 0xFF	; 255
+ 694:	e8 1a       	sub	r14, r24
+ 696:	f8 0a       	sbc	r15, r24
+ 698:	ce 14       	cp	r12, r14
+ 69a:	df 04       	cpc	r13, r15
+ 69c:	d4 f6       	brge	.-76     	; 0x652 <GUI_FillCircle+0x4a>
+ 69e:	0e 94 f9 04 	call	0x9f2	; 0x9f2 <OLED_Display>
+ 6a2:	df 91       	pop	r29
+ 6a4:	cf 91       	pop	r28
+ 6a6:	1f 91       	pop	r17
+ 6a8:	0f 91       	pop	r16
+ 6aa:	ff 90       	pop	r15
+ 6ac:	ef 90       	pop	r14
+ 6ae:	df 90       	pop	r13
+ 6b0:	cf 90       	pop	r12
+ 6b2:	bf 90       	pop	r11
+ 6b4:	af 90       	pop	r10
+ 6b6:	9f 90       	pop	r9
+ 6b8:	8f 90       	pop	r8
+ 6ba:	08 95       	ret
+
+Disassembly of section .text.GUI_DrawTriangel:
+
+00000b6e <GUI_DrawTriangel>:
+								      1-white
+											0-black	
+ * @retvalue   :None
+***********************************************************************************/ 
+void GUI_DrawTriangel(u8 x0,u8 y0,u8 x1,u8 y1,u8 x2,u8 y2,u8 color)
+{
+ b6e:	cf 92       	push	r12
+ b70:	df 92       	push	r13
+ b72:	ef 92       	push	r14
+ b74:	ff 92       	push	r15
+ b76:	0f 93       	push	r16
+ b78:	1f 93       	push	r17
+ b7a:	cf 93       	push	r28
+ b7c:	df 93       	push	r29
+ b7e:	d8 2f       	mov	r29, r24
+ b80:	16 2f       	mov	r17, r22
+ b82:	f4 2e       	mov	r15, r20
+ b84:	d2 2e       	mov	r13, r18
+ b86:	c0 2f       	mov	r28, r16
+	GUI_DrawLine(x0,y0,x1,y1,color);
+ b88:	0c 2d       	mov	r16, r12
+ b8a:	0e 94 69 02 	call	0x4d2	; 0x4d2 <GUI_DrawLine>
+	GUI_DrawLine(x1,y1,x2,y2,color);
+ b8e:	2e 2d       	mov	r18, r14
+ b90:	4c 2f       	mov	r20, r28
+ b92:	6d 2d       	mov	r22, r13
+ b94:	8f 2d       	mov	r24, r15
+ b96:	0e 94 69 02 	call	0x4d2	; 0x4d2 <GUI_DrawLine>
+	GUI_DrawLine(x2,y2,x0,y0,color);
+ b9a:	21 2f       	mov	r18, r17
+ b9c:	4d 2f       	mov	r20, r29
+ b9e:	6e 2d       	mov	r22, r14
+ ba0:	8c 2f       	mov	r24, r28
+ ba2:	0e 94 69 02 	call	0x4d2	; 0x4d2 <GUI_DrawLine>
+}
+ ba6:	df 91       	pop	r29
+ ba8:	cf 91       	pop	r28
+ baa:	1f 91       	pop	r17
+ bac:	0f 91       	pop	r16
+ bae:	ff 90       	pop	r15
+ bb0:	ef 90       	pop	r14
+ bb2:	df 90       	pop	r13
+ bb4:	cf 90       	pop	r12
+ bb6:	08 95       	ret
+
+Disassembly of section .text.GUI_FillTriangel:
+
+000000c2 <GUI_FillTriangel>:
+ * @retvalue   :None
+********************************************************************/
+void GUI_DrawPoint(u8 x,u8 y,u8 color)
+{
+	OLED_Set_Pixel(x,y,color);
+	OLED_Display();
+  c2:	2f 92       	push	r2
+  c4:	3f 92       	push	r3
+  c6:	4f 92       	push	r4
+  c8:	5f 92       	push	r5
+  ca:	6f 92       	push	r6
+  cc:	7f 92       	push	r7
+  ce:	8f 92       	push	r8
+  d0:	9f 92       	push	r9
+  d2:	af 92       	push	r10
+  d4:	bf 92       	push	r11
+  d6:	cf 92       	push	r12
+  d8:	df 92       	push	r13
+  da:	ef 92       	push	r14
+  dc:	ff 92       	push	r15
+  de:	0f 93       	push	r16
+  e0:	1f 93       	push	r17
+  e2:	cf 93       	push	r28
+  e4:	df 93       	push	r29
+  e6:	cd b7       	in	r28, 0x3d	; 61
+  e8:	de b7       	in	r29, 0x3e	; 62
+  ea:	61 97       	sbiw	r28, 0x11	; 17
+  ec:	0f b6       	in	r0, 0x3f	; 63
+  ee:	f8 94       	cli
+  f0:	de bf       	out	0x3e, r29	; 62
+  f2:	0f be       	out	0x3f, r0	; 63
+  f4:	cd bf       	out	0x3d, r28	; 61
+  f6:	8b 83       	std	Y+3, r24	; 0x03
+  f8:	6c 83       	std	Y+4, r22	; 0x04
+  fa:	4d 83       	std	Y+5, r20	; 0x05
+  fc:	2e 83       	std	Y+6, r18	; 0x06
+  fe:	0f 83       	std	Y+7, r16	; 0x07
+ 100:	e8 86       	std	Y+8, r14	; 0x08
+ 102:	2c 2c       	mov	r2, r12
+ 104:	26 17       	cp	r18, r22
+ 106:	70 f4       	brcc	.+28     	; 0x124 <GUI_FillTriangel+0x62>
+ 108:	be 01       	movw	r22, r28
+ 10a:	6a 5f       	subi	r22, 0xFA	; 250
+ 10c:	7f 4f       	sbci	r23, 0xFF	; 255
+ 10e:	ce 01       	movw	r24, r28
+ 110:	04 96       	adiw	r24, 0x04	; 4
+ 112:	0e 94 c5 06 	call	0xd8a	; 0xd8a <_swap>
+ 116:	be 01       	movw	r22, r28
+ 118:	6b 5f       	subi	r22, 0xFB	; 251
+ 11a:	7f 4f       	sbci	r23, 0xFF	; 255
+ 11c:	ce 01       	movw	r24, r28
+ 11e:	03 96       	adiw	r24, 0x03	; 3
+ 120:	0e 94 c5 06 	call	0xd8a	; 0xd8a <_swap>
+ 124:	9e 81       	ldd	r25, Y+6	; 0x06
+ 126:	88 85       	ldd	r24, Y+8	; 0x08
+ 128:	89 17       	cp	r24, r25
+ 12a:	70 f4       	brcc	.+28     	; 0x148 <GUI_FillTriangel+0x86>
+ 12c:	be 01       	movw	r22, r28
+ 12e:	6a 5f       	subi	r22, 0xFA	; 250
+ 130:	7f 4f       	sbci	r23, 0xFF	; 255
+ 132:	ce 01       	movw	r24, r28
+ 134:	08 96       	adiw	r24, 0x08	; 8
+ 136:	0e 94 c5 06 	call	0xd8a	; 0xd8a <_swap>
+ 13a:	be 01       	movw	r22, r28
+ 13c:	6b 5f       	subi	r22, 0xFB	; 251
+ 13e:	7f 4f       	sbci	r23, 0xFF	; 255
+ 140:	ce 01       	movw	r24, r28
+ 142:	07 96       	adiw	r24, 0x07	; 7
+ 144:	0e 94 c5 06 	call	0xd8a	; 0xd8a <_swap>
+ 148:	9c 81       	ldd	r25, Y+4	; 0x04
+ 14a:	8e 81       	ldd	r24, Y+6	; 0x06
+ 14c:	89 17       	cp	r24, r25
+ 14e:	70 f4       	brcc	.+28     	; 0x16c <GUI_FillTriangel+0xaa>
+ 150:	be 01       	movw	r22, r28
+ 152:	6a 5f       	subi	r22, 0xFA	; 250
+ 154:	7f 4f       	sbci	r23, 0xFF	; 255
+ 156:	ce 01       	movw	r24, r28
+ 158:	04 96       	adiw	r24, 0x04	; 4
+ 15a:	0e 94 c5 06 	call	0xd8a	; 0xd8a <_swap>
+ 15e:	be 01       	movw	r22, r28
+ 160:	6b 5f       	subi	r22, 0xFB	; 251
+ 162:	7f 4f       	sbci	r23, 0xFF	; 255
+ 164:	ce 01       	movw	r24, r28
+ 166:	03 96       	adiw	r24, 0x03	; 3
+ 168:	0e 94 c5 06 	call	0xd8a	; 0xd8a <_swap>
+ 16c:	1c 81       	ldd	r17, Y+4	; 0x04
+ 16e:	a8 85       	ldd	r26, Y+8	; 0x08
+ 170:	1a 13       	cpse	r17, r26
+ 172:	1c c0       	rjmp	.+56     	; 0x1ac <GUI_FillTriangel+0xea>
+ 174:	8b 81       	ldd	r24, Y+3	; 0x03
+ 176:	8a 83       	std	Y+2, r24	; 0x02
+ 178:	89 83       	std	Y+1, r24	; 0x01
+ 17a:	9d 81       	ldd	r25, Y+5	; 0x05
+ 17c:	98 17       	cp	r25, r24
+ 17e:	10 f4       	brcc	.+4      	; 0x184 <GUI_FillTriangel+0xc2>
+ 180:	99 83       	std	Y+1, r25	; 0x01
+ 182:	03 c0       	rjmp	.+6      	; 0x18a <GUI_FillTriangel+0xc8>
+ 184:	89 17       	cp	r24, r25
+ 186:	08 f4       	brcc	.+2      	; 0x18a <GUI_FillTriangel+0xc8>
+ 188:	9a 83       	std	Y+2, r25	; 0x02
+ 18a:	8f 81       	ldd	r24, Y+7	; 0x07
+ 18c:	99 81       	ldd	r25, Y+1	; 0x01
+ 18e:	89 17       	cp	r24, r25
+ 190:	10 f4       	brcc	.+4      	; 0x196 <GUI_FillTriangel+0xd4>
+ 192:	89 83       	std	Y+1, r24	; 0x01
+ 194:	04 c0       	rjmp	.+8      	; 0x19e <GUI_FillTriangel+0xdc>
+ 196:	9a 81       	ldd	r25, Y+2	; 0x02
+ 198:	98 17       	cp	r25, r24
+ 19a:	08 f4       	brcc	.+2      	; 0x19e <GUI_FillTriangel+0xdc>
+ 19c:	8a 83       	std	Y+2, r24	; 0x02
+ 19e:	22 2d       	mov	r18, r2
+ 1a0:	41 2f       	mov	r20, r17
+ 1a2:	6a 81       	ldd	r22, Y+2	; 0x02
+ 1a4:	89 81       	ldd	r24, Y+1	; 0x01
+ 1a6:	0e 94 6d 06 	call	0xcda	; 0xcda <_draw_h_line>
+ 1aa:	d4 c0       	rjmp	.+424    	; 0x354 <GUI_FillTriangel+0x292>
+ 1ac:	8d 81       	ldd	r24, Y+5	; 0x05
+ 1ae:	90 e0       	ldi	r25, 0x00	; 0
+ 1b0:	6b 81       	ldd	r22, Y+3	; 0x03
+ 1b2:	70 e0       	ldi	r23, 0x00	; 0
+ 1b4:	9c 01       	movw	r18, r24
+ 1b6:	26 1b       	sub	r18, r22
+ 1b8:	37 0b       	sbc	r19, r23
+ 1ba:	3d 87       	std	Y+13, r19	; 0x0d
+ 1bc:	2c 87       	std	Y+12, r18	; 0x0c
+ 1be:	0e 81       	ldd	r16, Y+6	; 0x06
+ 1c0:	40 2f       	mov	r20, r16
+ 1c2:	50 e0       	ldi	r21, 0x00	; 0
+ 1c4:	e1 2f       	mov	r30, r17
+ 1c6:	f0 e0       	ldi	r31, 0x00	; 0
+ 1c8:	9a 01       	movw	r18, r20
+ 1ca:	2e 1b       	sub	r18, r30
+ 1cc:	3f 0b       	sbc	r19, r31
+ 1ce:	3f 87       	std	Y+15, r19	; 0x0f
+ 1d0:	2e 87       	std	Y+14, r18	; 0x0e
+ 1d2:	2f 81       	ldd	r18, Y+7	; 0x07
+ 1d4:	30 e0       	ldi	r19, 0x00	; 0
+ 1d6:	59 01       	movw	r10, r18
+ 1d8:	a6 1a       	sub	r10, r22
+ 1da:	b7 0a       	sbc	r11, r23
+ 1dc:	6a 2f       	mov	r22, r26
+ 1de:	70 e0       	ldi	r23, 0x00	; 0
+ 1e0:	4b 01       	movw	r8, r22
+ 1e2:	8e 1a       	sub	r8, r30
+ 1e4:	9f 0a       	sbc	r9, r31
+ 1e6:	f9 01       	movw	r30, r18
+ 1e8:	e8 1b       	sub	r30, r24
+ 1ea:	f9 0b       	sbc	r31, r25
+ 1ec:	fb 87       	std	Y+11, r31	; 0x0b
+ 1ee:	ea 87       	std	Y+10, r30	; 0x0a
+ 1f0:	9b 01       	movw	r18, r22
+ 1f2:	24 1b       	sub	r18, r20
+ 1f4:	35 0b       	sbc	r19, r21
+ 1f6:	39 8b       	std	Y+17, r19	; 0x11
+ 1f8:	28 8b       	std	Y+16, r18	; 0x10
+ 1fa:	a0 13       	cpse	r26, r16
+ 1fc:	01 50       	subi	r16, 0x01	; 1
+ 1fe:	c1 2c       	mov	r12, r1
+ 200:	d1 2c       	mov	r13, r1
+ 202:	76 01       	movw	r14, r12
+ 204:	41 2c       	mov	r4, r1
+ 206:	51 2c       	mov	r5, r1
+ 208:	32 01       	movw	r6, r4
+ 20a:	29 86       	std	Y+9, r2	; 0x09
+ 20c:	20 2e       	mov	r2, r16
+ 20e:	3c c0       	rjmp	.+120    	; 0x288 <GUI_FillTriangel+0x1c6>
+ 210:	c3 01       	movw	r24, r6
+ 212:	b2 01       	movw	r22, r4
+ 214:	ee 85       	ldd	r30, Y+14	; 0x0e
+ 216:	ff 85       	ldd	r31, Y+15	; 0x0f
+ 218:	9f 01       	movw	r18, r30
+ 21a:	ff 0f       	add	r31, r31
+ 21c:	44 0b       	sbc	r20, r20
+ 21e:	55 0b       	sbc	r21, r21
+ 220:	0e 94 56 06 	call	0xcac	; 0xcac <__divmodsi4>
+ 224:	3b 80       	ldd	r3, Y+3	; 0x03
+ 226:	03 2d       	mov	r16, r3
+ 228:	02 0f       	add	r16, r18
+ 22a:	09 83       	std	Y+1, r16	; 0x01
+ 22c:	c7 01       	movw	r24, r14
+ 22e:	b6 01       	movw	r22, r12
+ 230:	94 01       	movw	r18, r8
+ 232:	09 2c       	mov	r0, r9
+ 234:	00 0c       	add	r0, r0
+ 236:	44 0b       	sbc	r20, r20
+ 238:	55 0b       	sbc	r21, r21
+ 23a:	0e 94 56 06 	call	0xcac	; 0xcac <__divmodsi4>
+ 23e:	32 0e       	add	r3, r18
+ 240:	3a 82       	std	Y+2, r3	; 0x02
+ 242:	2c 85       	ldd	r18, Y+12	; 0x0c
+ 244:	3d 85       	ldd	r19, Y+13	; 0x0d
+ 246:	c9 01       	movw	r24, r18
+ 248:	33 0f       	add	r19, r19
+ 24a:	aa 0b       	sbc	r26, r26
+ 24c:	bb 0b       	sbc	r27, r27
+ 24e:	48 0e       	add	r4, r24
+ 250:	59 1e       	adc	r5, r25
+ 252:	6a 1e       	adc	r6, r26
+ 254:	7b 1e       	adc	r7, r27
+ 256:	c5 01       	movw	r24, r10
+ 258:	0b 2c       	mov	r0, r11
+ 25a:	00 0c       	add	r0, r0
+ 25c:	aa 0b       	sbc	r26, r26
+ 25e:	bb 0b       	sbc	r27, r27
+ 260:	c8 0e       	add	r12, r24
+ 262:	d9 1e       	adc	r13, r25
+ 264:	ea 1e       	adc	r14, r26
+ 266:	fb 1e       	adc	r15, r27
+ 268:	30 16       	cp	r3, r16
+ 26a:	38 f4       	brcc	.+14     	; 0x27a <GUI_FillTriangel+0x1b8>
+ 26c:	be 01       	movw	r22, r28
+ 26e:	6e 5f       	subi	r22, 0xFE	; 254
+ 270:	7f 4f       	sbci	r23, 0xFF	; 255
+ 272:	ce 01       	movw	r24, r28
+ 274:	01 96       	adiw	r24, 0x01	; 1
+ 276:	0e 94 c5 06 	call	0xd8a	; 0xd8a <_swap>
+ 27a:	29 85       	ldd	r18, Y+9	; 0x09
+ 27c:	41 2f       	mov	r20, r17
+ 27e:	6a 81       	ldd	r22, Y+2	; 0x02
+ 280:	89 81       	ldd	r24, Y+1	; 0x01
+ 282:	0e 94 6d 06 	call	0xcda	; 0xcda <_draw_h_line>
+ 286:	1f 5f       	subi	r17, 0xFF	; 255
+ 288:	21 16       	cp	r2, r17
+ 28a:	10 f6       	brcc	.-124    	; 0x210 <GUI_FillTriangel+0x14e>
+ 28c:	81 2f       	mov	r24, r17
+ 28e:	90 e0       	ldi	r25, 0x00	; 0
+ 290:	2e 81       	ldd	r18, Y+6	; 0x06
+ 292:	ac 01       	movw	r20, r24
+ 294:	42 1b       	sub	r20, r18
+ 296:	51 09       	sbc	r21, r1
+ 298:	6a 85       	ldd	r22, Y+10	; 0x0a
+ 29a:	7b 85       	ldd	r23, Y+11	; 0x0b
+ 29c:	64 9f       	mul	r22, r20
+ 29e:	90 01       	movw	r18, r0
+ 2a0:	65 9f       	mul	r22, r21
+ 2a2:	30 0d       	add	r19, r0
+ 2a4:	74 9f       	mul	r23, r20
+ 2a6:	30 0d       	add	r19, r0
+ 2a8:	11 24       	eor	r1, r1
+ 2aa:	69 01       	movw	r12, r18
+ 2ac:	33 0f       	add	r19, r19
+ 2ae:	ee 08       	sbc	r14, r14
+ 2b0:	ff 08       	sbc	r15, r15
+ 2b2:	2c 81       	ldd	r18, Y+4	; 0x04
+ 2b4:	82 1b       	sub	r24, r18
+ 2b6:	91 09       	sbc	r25, r1
+ 2b8:	a8 9e       	mul	r10, r24
+ 2ba:	20 01       	movw	r4, r0
+ 2bc:	a9 9e       	mul	r10, r25
+ 2be:	50 0c       	add	r5, r0
+ 2c0:	b8 9e       	mul	r11, r24
+ 2c2:	50 0c       	add	r5, r0
+ 2c4:	11 24       	eor	r1, r1
+ 2c6:	05 2c       	mov	r0, r5
+ 2c8:	00 0c       	add	r0, r0
+ 2ca:	66 08       	sbc	r6, r6
+ 2cc:	77 08       	sbc	r7, r7
+ 2ce:	28 88       	ldd	r2, Y+16	; 0x10
+ 2d0:	39 88       	ldd	r3, Y+17	; 0x11
+ 2d2:	3b c0       	rjmp	.+118    	; 0x34a <GUI_FillTriangel+0x288>
+ 2d4:	c7 01       	movw	r24, r14
+ 2d6:	b6 01       	movw	r22, r12
+ 2d8:	91 01       	movw	r18, r2
+ 2da:	03 2c       	mov	r0, r3
+ 2dc:	00 0c       	add	r0, r0
+ 2de:	44 0b       	sbc	r20, r20
+ 2e0:	55 0b       	sbc	r21, r21
+ 2e2:	0e 94 56 06 	call	0xcac	; 0xcac <__divmodsi4>
+ 2e6:	0d 81       	ldd	r16, Y+5	; 0x05
+ 2e8:	02 0f       	add	r16, r18
+ 2ea:	09 83       	std	Y+1, r16	; 0x01
+ 2ec:	c3 01       	movw	r24, r6
+ 2ee:	b2 01       	movw	r22, r4
+ 2f0:	94 01       	movw	r18, r8
+ 2f2:	09 2c       	mov	r0, r9
+ 2f4:	00 0c       	add	r0, r0
+ 2f6:	44 0b       	sbc	r20, r20
+ 2f8:	55 0b       	sbc	r21, r21
+ 2fa:	0e 94 56 06 	call	0xcac	; 0xcac <__divmodsi4>
+ 2fe:	8b 81       	ldd	r24, Y+3	; 0x03
+ 300:	28 0f       	add	r18, r24
+ 302:	2a 83       	std	Y+2, r18	; 0x02
+ 304:	ea 85       	ldd	r30, Y+10	; 0x0a
+ 306:	fb 85       	ldd	r31, Y+11	; 0x0b
+ 308:	cf 01       	movw	r24, r30
+ 30a:	ff 0f       	add	r31, r31
+ 30c:	aa 0b       	sbc	r26, r26
+ 30e:	bb 0b       	sbc	r27, r27
+ 310:	c8 0e       	add	r12, r24
+ 312:	d9 1e       	adc	r13, r25
+ 314:	ea 1e       	adc	r14, r26
+ 316:	fb 1e       	adc	r15, r27
+ 318:	c5 01       	movw	r24, r10
+ 31a:	0b 2c       	mov	r0, r11
+ 31c:	00 0c       	add	r0, r0
+ 31e:	aa 0b       	sbc	r26, r26
+ 320:	bb 0b       	sbc	r27, r27
+ 322:	48 0e       	add	r4, r24
+ 324:	59 1e       	adc	r5, r25
+ 326:	6a 1e       	adc	r6, r26
+ 328:	7b 1e       	adc	r7, r27
+ 32a:	20 17       	cp	r18, r16
+ 32c:	38 f4       	brcc	.+14     	; 0x33c <GUI_FillTriangel+0x27a>
+ 32e:	be 01       	movw	r22, r28
+ 330:	6e 5f       	subi	r22, 0xFE	; 254
+ 332:	7f 4f       	sbci	r23, 0xFF	; 255
+ 334:	ce 01       	movw	r24, r28
+ 336:	01 96       	adiw	r24, 0x01	; 1
+ 338:	0e 94 c5 06 	call	0xd8a	; 0xd8a <_swap>
+ 33c:	29 85       	ldd	r18, Y+9	; 0x09
+ 33e:	41 2f       	mov	r20, r17
+ 340:	6a 81       	ldd	r22, Y+2	; 0x02
+ 342:	89 81       	ldd	r24, Y+1	; 0x01
+ 344:	0e 94 6d 06 	call	0xcda	; 0xcda <_draw_h_line>
+ 348:	1f 5f       	subi	r17, 0xFF	; 255
+ 34a:	88 85       	ldd	r24, Y+8	; 0x08
+ 34c:	81 17       	cp	r24, r17
+ 34e:	10 f6       	brcc	.-124    	; 0x2d4 <GUI_FillTriangel+0x212>
+ 350:	0e 94 f9 04 	call	0x9f2	; 0x9f2 <OLED_Display>
+ 354:	61 96       	adiw	r28, 0x11	; 17
+ 356:	0f b6       	in	r0, 0x3f	; 63
+ 358:	f8 94       	cli
+ 35a:	de bf       	out	0x3e, r29	; 62
+ 35c:	0f be       	out	0x3f, r0	; 63
+ 35e:	cd bf       	out	0x3d, r28	; 61
+ 360:	df 91       	pop	r29
+ 362:	cf 91       	pop	r28
+ 364:	1f 91       	pop	r17
+ 366:	0f 91       	pop	r16
+ 368:	ff 90       	pop	r15
+ 36a:	ef 90       	pop	r14
+ 36c:	df 90       	pop	r13
+ 36e:	cf 90       	pop	r12
+ 370:	bf 90       	pop	r11
+ 372:	af 90       	pop	r10
+ 374:	9f 90       	pop	r9
+ 376:	8f 90       	pop	r8
+ 378:	7f 90       	pop	r7
+ 37a:	6f 90       	pop	r6
+ 37c:	5f 90       	pop	r5
+ 37e:	4f 90       	pop	r4
+ 380:	3f 90       	pop	r3
+ 382:	2f 90       	pop	r2
+ 384:	08 95       	ret
+
+Disassembly of section .text.SPI_Init:
+
+00000c7a <SPI_Init>:
+		*pRxBuffer = SPDR;
+		pRxBuffer++;
+		Len--;
+	}
+	return;
+}
+ c7a:	84 b1       	in	r24, 0x04	; 4
+ c7c:	8c 62       	ori	r24, 0x2C	; 44
+ c7e:	84 b9       	out	0x04, r24	; 4
+ c80:	8c b5       	in	r24, 0x2c	; 44
+ c82:	8f 7d       	andi	r24, 0xDF	; 223
+ c84:	8c bd       	out	0x2c, r24	; 44
+ c86:	8c b5       	in	r24, 0x2c	; 44
+ c88:	87 7f       	andi	r24, 0xF7	; 247
+ c8a:	8c bd       	out	0x2c, r24	; 44
+ c8c:	8c b5       	in	r24, 0x2c	; 44
+ c8e:	8b 7f       	andi	r24, 0xFB	; 251
+ c90:	8c bd       	out	0x2c, r24	; 44
+ c92:	8d b5       	in	r24, 0x2d	; 45
+ c94:	8e 7f       	andi	r24, 0xFE	; 254
+ c96:	8d bd       	out	0x2d, r24	; 45
+ c98:	8c b5       	in	r24, 0x2c	; 44
+ c9a:	8c 7f       	andi	r24, 0xFC	; 252
+ c9c:	8c bd       	out	0x2c, r24	; 44
+ c9e:	8c b5       	in	r24, 0x2c	; 44
+ ca0:	80 61       	ori	r24, 0x10	; 16
+ ca2:	8c bd       	out	0x2c, r24	; 44
+ ca4:	8c b5       	in	r24, 0x2c	; 44
+ ca6:	80 64       	ori	r24, 0x40	; 64
+ ca8:	8c bd       	out	0x2c, r24	; 44
+ caa:	08 95       	ret
+
+Disassembly of section .text.main:
+
+0000097e <main>:
+ 97e:	0e 94 3d 06 	call	0xc7a	; 0xc7a <SPI_Init>
+ 982:	0e 94 c3 01 	call	0x386	; 0x386 <OLED_Init>
+ 986:	2f ef       	ldi	r18, 0xFF	; 255
+ 988:	81 ee       	ldi	r24, 0xE1	; 225
+ 98a:	94 e0       	ldi	r25, 0x04	; 4
+ 98c:	21 50       	subi	r18, 0x01	; 1
+ 98e:	80 40       	sbci	r24, 0x00	; 0
+ 990:	90 40       	sbci	r25, 0x00	; 0
+ 992:	e1 f7       	brne	.-8      	; 0x98c <main+0xe>
+ 994:	00 c0       	rjmp	.+0      	; 0x996 <main+0x18>
+ 996:	00 00       	nop
+ 998:	0e 94 84 04 	call	0x908	; 0x908 <Test_Circle>
+ 99c:	2f ef       	ldi	r18, 0xFF	; 255
+ 99e:	83 ed       	ldi	r24, 0xD3	; 211
+ 9a0:	90 e3       	ldi	r25, 0x30	; 48
+ 9a2:	21 50       	subi	r18, 0x01	; 1
+ 9a4:	80 40       	sbci	r24, 0x00	; 0
+ 9a6:	90 40       	sbci	r25, 0x00	; 0
+ 9a8:	e1 f7       	brne	.-8      	; 0x9a2 <main+0x24>
+ 9aa:	00 c0       	rjmp	.+0      	; 0x9ac <main+0x2e>
+ 9ac:	00 00       	nop
+ 9ae:	0e 94 46 04 	call	0x88c	; 0x88c <Test_Rectangular>
+ 9b2:	2f ef       	ldi	r18, 0xFF	; 255
+ 9b4:	83 ed       	ldi	r24, 0xD3	; 211
+ 9b6:	90 e3       	ldi	r25, 0x30	; 48
+ 9b8:	21 50       	subi	r18, 0x01	; 1
+ 9ba:	80 40       	sbci	r24, 0x00	; 0
+ 9bc:	90 40       	sbci	r25, 0x00	; 0
+ 9be:	e1 f7       	brne	.-8      	; 0x9b8 <main+0x3a>
+ 9c0:	00 c0       	rjmp	.+0      	; 0x9c2 <main+0x44>
+ 9c2:	00 00       	nop
+ 9c4:	0e 94 dc 05 	call	0xbb8	; 0xbb8 <Test_Color>
+ 9c8:	2f ef       	ldi	r18, 0xFF	; 255
+ 9ca:	83 ed       	ldi	r24, 0xD3	; 211
+ 9cc:	90 e3       	ldi	r25, 0x30	; 48
+ 9ce:	21 50       	subi	r18, 0x01	; 1
+ 9d0:	80 40       	sbci	r24, 0x00	; 0
+ 9d2:	90 40       	sbci	r25, 0x00	; 0
+ 9d4:	e1 f7       	brne	.-8      	; 0x9ce <main+0x50>
+ 9d6:	00 c0       	rjmp	.+0      	; 0x9d8 <main+0x5a>
+ 9d8:	00 00       	nop
+ 9da:	0e 94 ae 03 	call	0x75c	; 0x75c <Test_Triangle>
+ 9de:	2f ef       	ldi	r18, 0xFF	; 255
+ 9e0:	83 ed       	ldi	r24, 0xD3	; 211
+ 9e2:	90 e3       	ldi	r25, 0x30	; 48
+ 9e4:	21 50       	subi	r18, 0x01	; 1
+ 9e6:	80 40       	sbci	r24, 0x00	; 0
+ 9e8:	90 40       	sbci	r25, 0x00	; 0
+ 9ea:	e1 f7       	brne	.-8      	; 0x9e4 <main+0x66>
+ 9ec:	00 c0       	rjmp	.+0      	; 0x9ee <main+0x70>
+ 9ee:	00 00       	nop
+ 9f0:	d3 cf       	rjmp	.-90     	; 0x998 <main+0x1a>
+
+Disassembly of section .text.SPI_SendReceiveData:
+
+00000d54 <SPI_SendReceiveData>:
+//en modo maestro
+void SPI_SendReceiveData(uint8_t *pTxBuffer,uint8_t *pRxBuffer,uint16_t Len){
+ d54:	fc 01       	movw	r30, r24
+ d56:	db 01       	movw	r26, r22
+	while(Len>0){
+ d58:	0a c0       	rjmp	.+20     	; 0xd6e <SPI_SendReceiveData+0x1a>
+		//se transmite el byte
+		SPDR = *pTxBuffer;
+ d5a:	80 81       	ld	r24, Z
+ d5c:	8e bd       	out	0x2e, r24	; 46
+		//Esperar que el flag SPIF se establesca
+		while(!(SPSR & 1U<<SPIF));
+ d5e:	0d b4       	in	r0, 0x2d	; 45
+ d60:	07 fe       	sbrs	r0, 7
+ d62:	fd cf       	rjmp	.-6      	; 0xd5e <SPI_SendReceiveData+0xa>
+		//se lee el byte recibido
+		*pRxBuffer = SPDR;
+ d64:	8e b5       	in	r24, 0x2e	; 46
+ d66:	8d 93       	st	X+, r24
+		//incrementamos los punteros
+		pTxBuffer++;
+ d68:	31 96       	adiw	r30, 0x01	; 1
+		pRxBuffer++;
+		Len--;
+ d6a:	41 50       	subi	r20, 0x01	; 1
+ d6c:	51 09       	sbc	r21, r1
+	}
+	return;
+}
+//en modo maestro
+void SPI_SendReceiveData(uint8_t *pTxBuffer,uint8_t *pRxBuffer,uint16_t Len){
+	while(Len>0){
+ d6e:	41 15       	cp	r20, r1
+ d70:	51 05       	cpc	r21, r1
+ d72:	99 f7       	brne	.-26     	; 0xd5a <SPI_SendReceiveData+0x6>
+		pTxBuffer++;
+		pRxBuffer++;
+		Len--;
+	}
+	return;
+ d74:	08 95       	ret
+
+Disassembly of section .text.SPI_WriteByte:
+
+00000d06 <SPI_WriteByte>:
+ */ 
+#include "Oled.h"
+
+extern void SPI_Init(void);
+extern void SPI_SendReceiveData(uint8_t *pTxBuffer,uint8_t *pRxBuffer,uint16_t Len);
+static uint8_t SPI_WriteByte(uint8_t byte){
+ d06:	cf 93       	push	r28
+ d08:	df 93       	push	r29
+ d0a:	00 d0       	rcall	.+0      	; 0xd0c <SPI_WriteByte+0x6>
+ d0c:	cd b7       	in	r28, 0x3d	; 61
+ d0e:	de b7       	in	r29, 0x3e	; 62
+ d10:	8a 83       	std	Y+2, r24	; 0x02
+	uint8_t data;
+	/* Start transmission */
+	SPI_SendReceiveData(&byte,&data,1);
+ d12:	41 e0       	ldi	r20, 0x01	; 1
+ d14:	50 e0       	ldi	r21, 0x00	; 0
+ d16:	be 01       	movw	r22, r28
+ d18:	6f 5f       	subi	r22, 0xFF	; 255
+ d1a:	7f 4f       	sbci	r23, 0xFF	; 255
+ d1c:	ce 01       	movw	r24, r28
+ d1e:	02 96       	adiw	r24, 0x02	; 2
+ d20:	0e 94 aa 06 	call	0xd54	; 0xd54 <SPI_SendReceiveData>
+	
+	return data;
+}
+ d24:	89 81       	ldd	r24, Y+1	; 0x01
+ d26:	0f 90       	pop	r0
+ d28:	0f 90       	pop	r0
+ d2a:	df 91       	pop	r29
+ d2c:	cf 91       	pop	r28
+ d2e:	08 95       	ret
+
+Disassembly of section .text.OLED_WR_Byte:
+
+00000d30 <OLED_WR_Byte>:
+								    1-write data
+ * @retvalue   :None
+********************************************************************/
+void OLED_WR_Byte(unsigned dat,unsigned cmd)
+{
+	if(cmd)
+ d30:	67 2b       	or	r22, r23
+ d32:	21 f0       	breq	.+8      	; 0xd3c <OLED_WR_Byte+0xc>
+	{
+		OLED_DC_Set();
+ d34:	95 b1       	in	r25, 0x05	; 5
+ d36:	92 60       	ori	r25, 0x02	; 2
+ d38:	95 b9       	out	0x05, r25	; 5
+ d3a:	03 c0       	rjmp	.+6      	; 0xd42 <OLED_WR_Byte+0x12>
+	}
+	else
+	{
+		OLED_DC_Clr();
+ d3c:	95 b1       	in	r25, 0x05	; 5
+ d3e:	9d 7f       	andi	r25, 0xFD	; 253
+ d40:	95 b9       	out	0x05, r25	; 5
+	}
+	OLED_CS_Clr();
+ d42:	95 b1       	in	r25, 0x05	; 5
+ d44:	9b 7f       	andi	r25, 0xFB	; 251
+ d46:	95 b9       	out	0x05, r25	; 5
+	SPI_WriteByte(dat);
+ d48:	0e 94 83 06 	call	0xd06	; 0xd06 <SPI_WriteByte>
+	OLED_CS_Set();
+ d4c:	85 b1       	in	r24, 0x05	; 5
+ d4e:	84 60       	ori	r24, 0x04	; 4
+ d50:	85 b9       	out	0x05, r24	; 5
+ d52:	08 95       	ret
+
+Disassembly of section .text.OLED_Set_Pixel:
+
+00000a62 <OLED_Set_Pixel>:
+	}
+	else
+	{
+		memset(OLED_buffer,0,sizeof(OLED_buffer));
+	}
+	OLED_Display();
+ a62:	44 23       	and	r20, r20
+ a64:	c9 f0       	breq	.+50     	; 0xa98 <OLED_Set_Pixel+0x36>
+ a66:	96 2f       	mov	r25, r22
+ a68:	96 95       	lsr	r25
+ a6a:	96 95       	lsr	r25
+ a6c:	96 95       	lsr	r25
+ a6e:	e8 2f       	mov	r30, r24
+ a70:	f0 e0       	ldi	r31, 0x00	; 0
+ a72:	80 e8       	ldi	r24, 0x80	; 128
+ a74:	98 9f       	mul	r25, r24
+ a76:	e0 0d       	add	r30, r0
+ a78:	f1 1d       	adc	r31, r1
+ a7a:	11 24       	eor	r1, r1
+ a7c:	67 70       	andi	r22, 0x07	; 7
+ a7e:	81 e0       	ldi	r24, 0x01	; 1
+ a80:	90 e0       	ldi	r25, 0x00	; 0
+ a82:	02 c0       	rjmp	.+4      	; 0xa88 <OLED_Set_Pixel+0x26>
+ a84:	88 0f       	add	r24, r24
+ a86:	99 1f       	adc	r25, r25
+ a88:	6a 95       	dec	r22
+ a8a:	e2 f7       	brpl	.-8      	; 0xa84 <OLED_Set_Pixel+0x22>
+ a8c:	e0 50       	subi	r30, 0x00	; 0
+ a8e:	ff 4f       	sbci	r31, 0xFF	; 255
+ a90:	90 81       	ld	r25, Z
+ a92:	89 2b       	or	r24, r25
+ a94:	80 83       	st	Z, r24
+ a96:	08 95       	ret
+ a98:	96 2f       	mov	r25, r22
+ a9a:	96 95       	lsr	r25
+ a9c:	96 95       	lsr	r25
+ a9e:	96 95       	lsr	r25
+ aa0:	e8 2f       	mov	r30, r24
+ aa2:	f0 e0       	ldi	r31, 0x00	; 0
+ aa4:	80 e8       	ldi	r24, 0x80	; 128
+ aa6:	98 9f       	mul	r25, r24
+ aa8:	e0 0d       	add	r30, r0
+ aaa:	f1 1d       	adc	r31, r1
+ aac:	11 24       	eor	r1, r1
+ aae:	67 70       	andi	r22, 0x07	; 7
+ ab0:	81 e0       	ldi	r24, 0x01	; 1
+ ab2:	90 e0       	ldi	r25, 0x00	; 0
+ ab4:	02 c0       	rjmp	.+4      	; 0xaba <OLED_Set_Pixel+0x58>
+ ab6:	88 0f       	add	r24, r24
+ ab8:	99 1f       	adc	r25, r25
+ aba:	6a 95       	dec	r22
+ abc:	e2 f7       	brpl	.-8      	; 0xab6 <OLED_Set_Pixel+0x54>
+ abe:	e0 50       	subi	r30, 0x00	; 0
+ ac0:	ff 4f       	sbci	r31, 0xFF	; 255
+ ac2:	80 95       	com	r24
+ ac4:	90 81       	ld	r25, Z
+ ac6:	89 23       	and	r24, r25
+ ac8:	80 83       	st	Z, r24
+ aca:	08 95       	ret
+
+Disassembly of section .text.OLED_Display:
+
+000009f2 <OLED_Display>:
+ 9f2:	0f 93       	push	r16
+ 9f4:	1f 93       	push	r17
+ 9f6:	cf 93       	push	r28
+ 9f8:	df 93       	push	r29
+ 9fa:	d0 e0       	ldi	r29, 0x00	; 0
+ 9fc:	2b c0       	rjmp	.+86     	; 0xa54 <OLED_Display+0x62>
+ 9fe:	0d 2f       	mov	r16, r29
+ a00:	10 e0       	ldi	r17, 0x00	; 0
+ a02:	60 e0       	ldi	r22, 0x00	; 0
+ a04:	70 e0       	ldi	r23, 0x00	; 0
+ a06:	c8 01       	movw	r24, r16
+ a08:	80 55       	subi	r24, 0x50	; 80
+ a0a:	9f 4f       	sbci	r25, 0xFF	; 255
+ a0c:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ a10:	60 e0       	ldi	r22, 0x00	; 0
+ a12:	70 e0       	ldi	r23, 0x00	; 0
+ a14:	80 e0       	ldi	r24, 0x00	; 0
+ a16:	90 e0       	ldi	r25, 0x00	; 0
+ a18:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ a1c:	60 e0       	ldi	r22, 0x00	; 0
+ a1e:	70 e0       	ldi	r23, 0x00	; 0
+ a20:	80 e1       	ldi	r24, 0x10	; 16
+ a22:	90 e0       	ldi	r25, 0x00	; 0
+ a24:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ a28:	c0 e0       	ldi	r28, 0x00	; 0
+ a2a:	11 c0       	rjmp	.+34     	; 0xa4e <OLED_Display+0x5c>
+ a2c:	f8 01       	movw	r30, r16
+ a2e:	f6 95       	lsr	r31
+ a30:	fe 2f       	mov	r31, r30
+ a32:	ee 27       	eor	r30, r30
+ a34:	f7 95       	ror	r31
+ a36:	e7 95       	ror	r30
+ a38:	ec 0f       	add	r30, r28
+ a3a:	f1 1d       	adc	r31, r1
+ a3c:	e0 50       	subi	r30, 0x00	; 0
+ a3e:	ff 4f       	sbci	r31, 0xFF	; 255
+ a40:	80 81       	ld	r24, Z
+ a42:	61 e0       	ldi	r22, 0x01	; 1
+ a44:	70 e0       	ldi	r23, 0x00	; 0
+ a46:	90 e0       	ldi	r25, 0x00	; 0
+ a48:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ a4c:	cf 5f       	subi	r28, 0xFF	; 255
+ a4e:	cc 23       	and	r28, r28
+ a50:	6c f7       	brge	.-38     	; 0xa2c <OLED_Display+0x3a>
+ a52:	df 5f       	subi	r29, 0xFF	; 255
+ a54:	d8 30       	cpi	r29, 0x08	; 8
+ a56:	98 f2       	brcs	.-90     	; 0x9fe <OLED_Display+0xc>
+ a58:	df 91       	pop	r29
+ a5a:	cf 91       	pop	r28
+ a5c:	1f 91       	pop	r17
+ a5e:	0f 91       	pop	r16
+ a60:	08 95       	ret
+
+Disassembly of section .text.OLED_Reset:
+
+00000c42 <OLED_Reset>:
+                    1-Display full white
+ * @retvalue   :None
+********************************************************************/ 
+void OLED_Reset(void)
+{
+	OLED_RST_Set();
+ c42:	85 b1       	in	r24, 0x05	; 5
+ c44:	81 60       	ori	r24, 0x01	; 1
+ c46:	85 b9       	out	0x05, r24	; 5
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ c48:	2f ef       	ldi	r18, 0xFF	; 255
+ c4a:	81 ee       	ldi	r24, 0xE1	; 225
+ c4c:	94 e0       	ldi	r25, 0x04	; 4
+ c4e:	21 50       	subi	r18, 0x01	; 1
+ c50:	80 40       	sbci	r24, 0x00	; 0
+ c52:	90 40       	sbci	r25, 0x00	; 0
+ c54:	e1 f7       	brne	.-8      	; 0xc4e <OLED_Reset+0xc>
+ c56:	00 c0       	rjmp	.+0      	; 0xc58 <OLED_Reset+0x16>
+ c58:	00 00       	nop
+	_delay_ms(100);
+	OLED_RST_Clr();
+ c5a:	85 b1       	in	r24, 0x05	; 5
+ c5c:	8e 7f       	andi	r24, 0xFE	; 254
+ c5e:	85 b9       	out	0x05, r24	; 5
+ c60:	2f ef       	ldi	r18, 0xFF	; 255
+ c62:	81 ee       	ldi	r24, 0xE1	; 225
+ c64:	94 e0       	ldi	r25, 0x04	; 4
+ c66:	21 50       	subi	r18, 0x01	; 1
+ c68:	80 40       	sbci	r24, 0x00	; 0
+ c6a:	90 40       	sbci	r25, 0x00	; 0
+ c6c:	e1 f7       	brne	.-8      	; 0xc66 <OLED_Reset+0x24>
+ c6e:	00 c0       	rjmp	.+0      	; 0xc70 <OLED_Reset+0x2e>
+ c70:	00 00       	nop
+	_delay_ms(100);
+	OLED_RST_Set(); 
+ c72:	85 b1       	in	r24, 0x05	; 5
+ c74:	81 60       	ori	r24, 0x01	; 1
+ c76:	85 b9       	out	0x05, r24	; 5
+ c78:	08 95       	ret
+
+Disassembly of section .text.OLED_Init_GPIO:
+
+00000d76 <OLED_Init_GPIO>:
+ * @function   :Reset OLED screen
+ * @parameters :None
+ * @retvalue   :None
+********************************************************************/ 
+void OLED_Init_GPIO(void){
+	PIN_OUTPUT(OLED_DC);
+ d76:	84 b1       	in	r24, 0x04	; 4
+ d78:	82 60       	ori	r24, 0x02	; 2
+ d7a:	84 b9       	out	0x04, r24	; 4
+	PIN_OUTPUT(OLED_RST);
+ d7c:	84 b1       	in	r24, 0x04	; 4
+ d7e:	81 60       	ori	r24, 0x01	; 1
+ d80:	84 b9       	out	0x04, r24	; 4
+	PIN_OUTPUT(OLED_CS);
+ d82:	84 b1       	in	r24, 0x04	; 4
+ d84:	84 60       	ori	r24, 0x04	; 4
+ d86:	84 b9       	out	0x04, r24	; 4
+ d88:	08 95       	ret
+
+Disassembly of section .text.OLED_Init:
+
+00000386 <OLED_Init>:
+	}
+	else
+	{
+		memset(OLED_buffer,0,sizeof(OLED_buffer));
+	}
+	OLED_Display();
+ 386:	0e 94 3d 06 	call	0xc7a	; 0xc7a <SPI_Init>
+ 38a:	0e 94 bb 06 	call	0xd76	; 0xd76 <OLED_Init_GPIO>
+ 38e:	2f ef       	ldi	r18, 0xFF	; 255
+ 390:	83 ec       	ldi	r24, 0xC3	; 195
+ 392:	99 e0       	ldi	r25, 0x09	; 9
+ 394:	21 50       	subi	r18, 0x01	; 1
+ 396:	80 40       	sbci	r24, 0x00	; 0
+ 398:	90 40       	sbci	r25, 0x00	; 0
+ 39a:	e1 f7       	brne	.-8      	; 0x394 <OLED_Init+0xe>
+ 39c:	00 c0       	rjmp	.+0      	; 0x39e <OLED_Init+0x18>
+ 39e:	00 00       	nop
+ 3a0:	0e 94 21 06 	call	0xc42	; 0xc42 <OLED_Reset>
+ 3a4:	60 e0       	ldi	r22, 0x00	; 0
+ 3a6:	70 e0       	ldi	r23, 0x00	; 0
+ 3a8:	8e ea       	ldi	r24, 0xAE	; 174
+ 3aa:	90 e0       	ldi	r25, 0x00	; 0
+ 3ac:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 3b0:	60 e0       	ldi	r22, 0x00	; 0
+ 3b2:	70 e0       	ldi	r23, 0x00	; 0
+ 3b4:	80 e0       	ldi	r24, 0x00	; 0
+ 3b6:	90 e0       	ldi	r25, 0x00	; 0
+ 3b8:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 3bc:	60 e0       	ldi	r22, 0x00	; 0
+ 3be:	70 e0       	ldi	r23, 0x00	; 0
+ 3c0:	80 e1       	ldi	r24, 0x10	; 16
+ 3c2:	90 e0       	ldi	r25, 0x00	; 0
+ 3c4:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 3c8:	60 e0       	ldi	r22, 0x00	; 0
+ 3ca:	70 e0       	ldi	r23, 0x00	; 0
+ 3cc:	80 e4       	ldi	r24, 0x40	; 64
+ 3ce:	90 e0       	ldi	r25, 0x00	; 0
+ 3d0:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 3d4:	60 e0       	ldi	r22, 0x00	; 0
+ 3d6:	70 e0       	ldi	r23, 0x00	; 0
+ 3d8:	80 eb       	ldi	r24, 0xB0	; 176
+ 3da:	90 e0       	ldi	r25, 0x00	; 0
+ 3dc:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 3e0:	60 e0       	ldi	r22, 0x00	; 0
+ 3e2:	70 e0       	ldi	r23, 0x00	; 0
+ 3e4:	81 e8       	ldi	r24, 0x81	; 129
+ 3e6:	90 e0       	ldi	r25, 0x00	; 0
+ 3e8:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 3ec:	60 e0       	ldi	r22, 0x00	; 0
+ 3ee:	70 e0       	ldi	r23, 0x00	; 0
+ 3f0:	8f ef       	ldi	r24, 0xFF	; 255
+ 3f2:	90 e0       	ldi	r25, 0x00	; 0
+ 3f4:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 3f8:	60 e0       	ldi	r22, 0x00	; 0
+ 3fa:	70 e0       	ldi	r23, 0x00	; 0
+ 3fc:	81 ea       	ldi	r24, 0xA1	; 161
+ 3fe:	90 e0       	ldi	r25, 0x00	; 0
+ 400:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 404:	60 e0       	ldi	r22, 0x00	; 0
+ 406:	70 e0       	ldi	r23, 0x00	; 0
+ 408:	86 ea       	ldi	r24, 0xA6	; 166
+ 40a:	90 e0       	ldi	r25, 0x00	; 0
+ 40c:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 410:	60 e0       	ldi	r22, 0x00	; 0
+ 412:	70 e0       	ldi	r23, 0x00	; 0
+ 414:	88 ea       	ldi	r24, 0xA8	; 168
+ 416:	90 e0       	ldi	r25, 0x00	; 0
+ 418:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 41c:	60 e0       	ldi	r22, 0x00	; 0
+ 41e:	70 e0       	ldi	r23, 0x00	; 0
+ 420:	8f e3       	ldi	r24, 0x3F	; 63
+ 422:	90 e0       	ldi	r25, 0x00	; 0
+ 424:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 428:	60 e0       	ldi	r22, 0x00	; 0
+ 42a:	70 e0       	ldi	r23, 0x00	; 0
+ 42c:	88 ec       	ldi	r24, 0xC8	; 200
+ 42e:	90 e0       	ldi	r25, 0x00	; 0
+ 430:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 434:	60 e0       	ldi	r22, 0x00	; 0
+ 436:	70 e0       	ldi	r23, 0x00	; 0
+ 438:	83 ed       	ldi	r24, 0xD3	; 211
+ 43a:	90 e0       	ldi	r25, 0x00	; 0
+ 43c:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 440:	60 e0       	ldi	r22, 0x00	; 0
+ 442:	70 e0       	ldi	r23, 0x00	; 0
+ 444:	80 e0       	ldi	r24, 0x00	; 0
+ 446:	90 e0       	ldi	r25, 0x00	; 0
+ 448:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 44c:	60 e0       	ldi	r22, 0x00	; 0
+ 44e:	70 e0       	ldi	r23, 0x00	; 0
+ 450:	85 ed       	ldi	r24, 0xD5	; 213
+ 452:	90 e0       	ldi	r25, 0x00	; 0
+ 454:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 458:	60 e0       	ldi	r22, 0x00	; 0
+ 45a:	70 e0       	ldi	r23, 0x00	; 0
+ 45c:	80 e8       	ldi	r24, 0x80	; 128
+ 45e:	90 e0       	ldi	r25, 0x00	; 0
+ 460:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 464:	60 e0       	ldi	r22, 0x00	; 0
+ 466:	70 e0       	ldi	r23, 0x00	; 0
+ 468:	89 ed       	ldi	r24, 0xD9	; 217
+ 46a:	90 e0       	ldi	r25, 0x00	; 0
+ 46c:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 470:	60 e0       	ldi	r22, 0x00	; 0
+ 472:	70 e0       	ldi	r23, 0x00	; 0
+ 474:	81 ef       	ldi	r24, 0xF1	; 241
+ 476:	90 e0       	ldi	r25, 0x00	; 0
+ 478:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 47c:	60 e0       	ldi	r22, 0x00	; 0
+ 47e:	70 e0       	ldi	r23, 0x00	; 0
+ 480:	8a ed       	ldi	r24, 0xDA	; 218
+ 482:	90 e0       	ldi	r25, 0x00	; 0
+ 484:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 488:	60 e0       	ldi	r22, 0x00	; 0
+ 48a:	70 e0       	ldi	r23, 0x00	; 0
+ 48c:	82 e1       	ldi	r24, 0x12	; 18
+ 48e:	90 e0       	ldi	r25, 0x00	; 0
+ 490:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 494:	60 e0       	ldi	r22, 0x00	; 0
+ 496:	70 e0       	ldi	r23, 0x00	; 0
+ 498:	8b ed       	ldi	r24, 0xDB	; 219
+ 49a:	90 e0       	ldi	r25, 0x00	; 0
+ 49c:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 4a0:	60 e0       	ldi	r22, 0x00	; 0
+ 4a2:	70 e0       	ldi	r23, 0x00	; 0
+ 4a4:	80 e3       	ldi	r24, 0x30	; 48
+ 4a6:	90 e0       	ldi	r25, 0x00	; 0
+ 4a8:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 4ac:	60 e0       	ldi	r22, 0x00	; 0
+ 4ae:	70 e0       	ldi	r23, 0x00	; 0
+ 4b0:	8d e8       	ldi	r24, 0x8D	; 141
+ 4b2:	90 e0       	ldi	r25, 0x00	; 0
+ 4b4:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 4b8:	60 e0       	ldi	r22, 0x00	; 0
+ 4ba:	70 e0       	ldi	r23, 0x00	; 0
+ 4bc:	84 e1       	ldi	r24, 0x14	; 20
+ 4be:	90 e0       	ldi	r25, 0x00	; 0
+ 4c0:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 4c4:	60 e0       	ldi	r22, 0x00	; 0
+ 4c6:	70 e0       	ldi	r23, 0x00	; 0
+ 4c8:	8f ea       	ldi	r24, 0xAF	; 175
+ 4ca:	90 e0       	ldi	r25, 0x00	; 0
+ 4cc:	0e 94 98 06 	call	0xd30	; 0xd30 <OLED_WR_Byte>
+ 4d0:	08 95       	ret
+
+Disassembly of section .text.Test_Color:
+
+00000bb8 <Test_Color>:
+ * @function   :Color fill test(white,black)
+ * @parameters :None
+ * @retvalue   :None
+******************************************************************************/
+void Test_Color(void)
+{
+ bb8:	0f 93       	push	r16
+	 GUI_Fill(0,0,WIDTH-1,HEIGHT-1,0);
+ bba:	00 e0       	ldi	r16, 0x00	; 0
+ bbc:	2f e3       	ldi	r18, 0x3F	; 63
+ bbe:	4f e7       	ldi	r20, 0x7F	; 127
+ bc0:	60 e0       	ldi	r22, 0x00	; 0
+ bc2:	80 e0       	ldi	r24, 0x00	; 0
+ bc4:	0e 94 66 05 	call	0xacc	; 0xacc <GUI_Fill>
+ bc8:	2f ef       	ldi	r18, 0xFF	; 255
+ bca:	83 ed       	ldi	r24, 0xD3	; 211
+ bcc:	90 e3       	ldi	r25, 0x30	; 48
+ bce:	21 50       	subi	r18, 0x01	; 1
+ bd0:	80 40       	sbci	r24, 0x00	; 0
+ bd2:	90 40       	sbci	r25, 0x00	; 0
+ bd4:	e1 f7       	brne	.-8      	; 0xbce <Test_Color+0x16>
+ bd6:	00 c0       	rjmp	.+0      	; 0xbd8 <Test_Color+0x20>
+ bd8:	00 00       	nop
+	 _delay_ms(1000);	
+	 GUI_Fill(0,0,WIDTH-1,HEIGHT-1,1);
+ bda:	01 e0       	ldi	r16, 0x01	; 1
+ bdc:	2f e3       	ldi	r18, 0x3F	; 63
+ bde:	4f e7       	ldi	r20, 0x7F	; 127
+ be0:	60 e0       	ldi	r22, 0x00	; 0
+ be2:	80 e0       	ldi	r24, 0x00	; 0
+ be4:	0e 94 66 05 	call	0xacc	; 0xacc <GUI_Fill>
+ be8:	2f ef       	ldi	r18, 0xFF	; 255
+ bea:	8d e3       	ldi	r24, 0x3D	; 61
+ bec:	99 e4       	ldi	r25, 0x49	; 73
+ bee:	21 50       	subi	r18, 0x01	; 1
+ bf0:	80 40       	sbci	r24, 0x00	; 0
+ bf2:	90 40       	sbci	r25, 0x00	; 0
+ bf4:	e1 f7       	brne	.-8      	; 0xbee <Test_Color+0x36>
+ bf6:	00 c0       	rjmp	.+0      	; 0xbf8 <Test_Color+0x40>
+ bf8:	00 00       	nop
+	 _delay_ms(1500);
+}
+ bfa:	0f 91       	pop	r16
+ bfc:	08 95       	ret
+
+Disassembly of section .text.Test_Rectangular:
+
+0000088c <Test_Rectangular>:
+								milliseconds later,Fill the rectangle in black,white in turn
+ * @parameters :None
+ * @retvalue   :None
+******************************************************************************/
+void Test_Rectangular(void)
+{
+ 88c:	0f 93       	push	r16
+	GUI_Fill(0,0,WIDTH/2-1,HEIGHT-1,0);
+ 88e:	00 e0       	ldi	r16, 0x00	; 0
+ 890:	2f e3       	ldi	r18, 0x3F	; 63
+ 892:	4f e3       	ldi	r20, 0x3F	; 63
+ 894:	60 e0       	ldi	r22, 0x00	; 0
+ 896:	80 e0       	ldi	r24, 0x00	; 0
+ 898:	0e 94 66 05 	call	0xacc	; 0xacc <GUI_Fill>
+	GUI_Fill(WIDTH/2,0,WIDTH-1,HEIGHT-1,1);
+ 89c:	01 e0       	ldi	r16, 0x01	; 1
+ 89e:	2f e3       	ldi	r18, 0x3F	; 63
+ 8a0:	4f e7       	ldi	r20, 0x7F	; 127
+ 8a2:	60 e0       	ldi	r22, 0x00	; 0
+ 8a4:	80 e4       	ldi	r24, 0x40	; 64
+ 8a6:	0e 94 66 05 	call	0xacc	; 0xacc <GUI_Fill>
+	GUI_DrawRectangle(5, 5, WIDTH/2-1-5, HEIGHT-1-5,1);
+ 8aa:	2a e3       	ldi	r18, 0x3A	; 58
+ 8ac:	4a e3       	ldi	r20, 0x3A	; 58
+ 8ae:	65 e0       	ldi	r22, 0x05	; 5
+ 8b0:	85 e0       	ldi	r24, 0x05	; 5
+ 8b2:	0e 94 91 05 	call	0xb22	; 0xb22 <GUI_DrawRectangle>
+	GUI_DrawRectangle(WIDTH/2-1+5, 5, WIDTH-1-5, HEIGHT-1-5,0);
+ 8b6:	00 e0       	ldi	r16, 0x00	; 0
+ 8b8:	2a e3       	ldi	r18, 0x3A	; 58
+ 8ba:	4a e7       	ldi	r20, 0x7A	; 122
+ 8bc:	65 e0       	ldi	r22, 0x05	; 5
+ 8be:	84 e4       	ldi	r24, 0x44	; 68
+ 8c0:	0e 94 91 05 	call	0xb22	; 0xb22 <GUI_DrawRectangle>
+ 8c4:	2f ef       	ldi	r18, 0xFF	; 255
+ 8c6:	83 ed       	ldi	r24, 0xD3	; 211
+ 8c8:	90 e3       	ldi	r25, 0x30	; 48
+ 8ca:	21 50       	subi	r18, 0x01	; 1
+ 8cc:	80 40       	sbci	r24, 0x00	; 0
+ 8ce:	90 40       	sbci	r25, 0x00	; 0
+ 8d0:	e1 f7       	brne	.-8      	; 0x8ca <Test_Rectangular+0x3e>
+ 8d2:	00 c0       	rjmp	.+0      	; 0x8d4 <Test_Rectangular+0x48>
+ 8d4:	00 00       	nop
+	_delay_ms(1000);
+	GUI_FillRectangle(5, 5, WIDTH/2-1-5, HEIGHT-1-5,1);
+ 8d6:	01 e0       	ldi	r16, 0x01	; 1
+ 8d8:	2a e3       	ldi	r18, 0x3A	; 58
+ 8da:	4a e3       	ldi	r20, 0x3A	; 58
+ 8dc:	65 e0       	ldi	r22, 0x05	; 5
+ 8de:	85 e0       	ldi	r24, 0x05	; 5
+ 8e0:	0e 94 d6 06 	call	0xdac	; 0xdac <GUI_FillRectangle>
+	GUI_FillRectangle(WIDTH/2-1+5, 5, WIDTH-1-5, HEIGHT-1-5,0);
+ 8e4:	00 e0       	ldi	r16, 0x00	; 0
+ 8e6:	2a e3       	ldi	r18, 0x3A	; 58
+ 8e8:	4a e7       	ldi	r20, 0x7A	; 122
+ 8ea:	65 e0       	ldi	r22, 0x05	; 5
+ 8ec:	84 e4       	ldi	r24, 0x44	; 68
+ 8ee:	0e 94 d6 06 	call	0xdac	; 0xdac <GUI_FillRectangle>
+ 8f2:	2f ef       	ldi	r18, 0xFF	; 255
+ 8f4:	8d e3       	ldi	r24, 0x3D	; 61
+ 8f6:	99 e4       	ldi	r25, 0x49	; 73
+ 8f8:	21 50       	subi	r18, 0x01	; 1
+ 8fa:	80 40       	sbci	r24, 0x00	; 0
+ 8fc:	90 40       	sbci	r25, 0x00	; 0
+ 8fe:	e1 f7       	brne	.-8      	; 0x8f8 <Test_Rectangular+0x6c>
+ 900:	00 c0       	rjmp	.+0      	; 0x902 <__stack+0x3>
+ 902:	00 00       	nop
+	_delay_ms(1500);
+}
+ 904:	0f 91       	pop	r16
+ 906:	08 95       	ret
+
+Disassembly of section .text.Test_Circle:
+
+00000908 <Test_Circle>:
+								milliseconds later,Fill the circular in black,white in turn
+ * @parameters :None
+ * @retvalue   :None
+******************************************************************************/
+void Test_Circle(void)
+{
+ 908:	0f 93       	push	r16
+	GUI_Fill(0,0,WIDTH/2-1,HEIGHT-1,0);
+ 90a:	00 e0       	ldi	r16, 0x00	; 0
+ 90c:	2f e3       	ldi	r18, 0x3F	; 63
+ 90e:	4f e3       	ldi	r20, 0x3F	; 63
+ 910:	60 e0       	ldi	r22, 0x00	; 0
+ 912:	80 e0       	ldi	r24, 0x00	; 0
+ 914:	0e 94 66 05 	call	0xacc	; 0xacc <GUI_Fill>
+	GUI_Fill(WIDTH/2,0,WIDTH-1,HEIGHT-1,1);
+ 918:	01 e0       	ldi	r16, 0x01	; 1
+ 91a:	2f e3       	ldi	r18, 0x3F	; 63
+ 91c:	4f e7       	ldi	r20, 0x7F	; 127
+ 91e:	60 e0       	ldi	r22, 0x00	; 0
+ 920:	80 e4       	ldi	r24, 0x40	; 64
+ 922:	0e 94 66 05 	call	0xacc	; 0xacc <GUI_Fill>
+	GUI_DrawCircle(WIDTH/2/2-1, HEIGHT/2-1, 1, 27);
+ 926:	2b e1       	ldi	r18, 0x1B	; 27
+ 928:	41 e0       	ldi	r20, 0x01	; 1
+ 92a:	6f e1       	ldi	r22, 0x1F	; 31
+ 92c:	8f e1       	ldi	r24, 0x1F	; 31
+ 92e:	0e 94 5e 03 	call	0x6bc	; 0x6bc <GUI_DrawCircle>
+	GUI_DrawCircle(WIDTH/2+WIDTH/2/2-1, HEIGHT/2-1, 0, 27);
+ 932:	2b e1       	ldi	r18, 0x1B	; 27
+ 934:	40 e0       	ldi	r20, 0x00	; 0
+ 936:	6f e1       	ldi	r22, 0x1F	; 31
+ 938:	8f e5       	ldi	r24, 0x5F	; 95
+ 93a:	0e 94 5e 03 	call	0x6bc	; 0x6bc <GUI_DrawCircle>
+ 93e:	2f ef       	ldi	r18, 0xFF	; 255
+ 940:	83 ed       	ldi	r24, 0xD3	; 211
+ 942:	90 e3       	ldi	r25, 0x30	; 48
+ 944:	21 50       	subi	r18, 0x01	; 1
+ 946:	80 40       	sbci	r24, 0x00	; 0
+ 948:	90 40       	sbci	r25, 0x00	; 0
+ 94a:	e1 f7       	brne	.-8      	; 0x944 <Test_Circle+0x3c>
+ 94c:	00 c0       	rjmp	.+0      	; 0x94e <Test_Circle+0x46>
+ 94e:	00 00       	nop
+	_delay_ms(1000);
+	GUI_FillCircle(WIDTH/2/2-1, HEIGHT/2-1, 1, 27);
+ 950:	2b e1       	ldi	r18, 0x1B	; 27
+ 952:	41 e0       	ldi	r20, 0x01	; 1
+ 954:	6f e1       	ldi	r22, 0x1F	; 31
+ 956:	8f e1       	ldi	r24, 0x1F	; 31
+ 958:	0e 94 04 03 	call	0x608	; 0x608 <GUI_FillCircle>
+	GUI_FillCircle(WIDTH/2+WIDTH/2/2-1, HEIGHT/2-1, 0, 27);
+ 95c:	2b e1       	ldi	r18, 0x1B	; 27
+ 95e:	40 e0       	ldi	r20, 0x00	; 0
+ 960:	6f e1       	ldi	r22, 0x1F	; 31
+ 962:	8f e5       	ldi	r24, 0x5F	; 95
+ 964:	0e 94 04 03 	call	0x608	; 0x608 <GUI_FillCircle>
+ 968:	2f ef       	ldi	r18, 0xFF	; 255
+ 96a:	8d e3       	ldi	r24, 0x3D	; 61
+ 96c:	99 e4       	ldi	r25, 0x49	; 73
+ 96e:	21 50       	subi	r18, 0x01	; 1
+ 970:	80 40       	sbci	r24, 0x00	; 0
+ 972:	90 40       	sbci	r25, 0x00	; 0
+ 974:	e1 f7       	brne	.-8      	; 0x96e <Test_Circle+0x66>
+ 976:	00 c0       	rjmp	.+0      	; 0x978 <Test_Circle+0x70>
+ 978:	00 00       	nop
+	_delay_ms(1500);
+}
+ 97a:	0f 91       	pop	r16
+ 97c:	08 95       	ret
+
+Disassembly of section .text.Test_Triangle:
+
+0000075c <Test_Triangle>:
+								milliseconds later,Fill the triangle in black,white in turn
+ * @parameters :None
+ * @retvalue   :None
+******************************************************************************/
+void Test_Triangle(void)
+{
+ 75c:	cf 92       	push	r12
+ 75e:	ef 92       	push	r14
+ 760:	0f 93       	push	r16
+	GUI_Fill(0,0,WIDTH/2-1,HEIGHT-1,0);
+ 762:	00 e0       	ldi	r16, 0x00	; 0
+ 764:	2f e3       	ldi	r18, 0x3F	; 63
+ 766:	4f e3       	ldi	r20, 0x3F	; 63
+ 768:	60 e0       	ldi	r22, 0x00	; 0
+ 76a:	80 e0       	ldi	r24, 0x00	; 0
+ 76c:	0e 94 66 05 	call	0xacc	; 0xacc <GUI_Fill>
+	GUI_Fill(WIDTH/2,0,WIDTH-1,HEIGHT-1,1);
+ 770:	01 e0       	ldi	r16, 0x01	; 1
+ 772:	2f e3       	ldi	r18, 0x3F	; 63
+ 774:	4f e7       	ldi	r20, 0x7F	; 127
+ 776:	60 e0       	ldi	r22, 0x00	; 0
+ 778:	80 e4       	ldi	r24, 0x40	; 64
+ 77a:	0e 94 66 05 	call	0xacc	; 0xacc <GUI_Fill>
+	GUI_DrawTriangel(5,HEIGHT-1-5,WIDTH/2/2-1,5,WIDTH/2-1-5,HEIGHT-1-5,1);
+ 77e:	cc 24       	eor	r12, r12
+ 780:	c3 94       	inc	r12
+ 782:	0f 2e       	mov	r0, r31
+ 784:	fa e3       	ldi	r31, 0x3A	; 58
+ 786:	ef 2e       	mov	r14, r31
+ 788:	f0 2d       	mov	r31, r0
+ 78a:	0a e3       	ldi	r16, 0x3A	; 58
+ 78c:	25 e0       	ldi	r18, 0x05	; 5
+ 78e:	4f e1       	ldi	r20, 0x1F	; 31
+ 790:	6a e3       	ldi	r22, 0x3A	; 58
+ 792:	85 e0       	ldi	r24, 0x05	; 5
+ 794:	0e 94 b7 05 	call	0xb6e	; 0xb6e <GUI_DrawTriangel>
+	GUI_DrawTriangel(WIDTH/2-1+5,HEIGHT-1-5,WIDTH/2+WIDTH/2/2-1,5,WIDTH-1-5,HEIGHT-1-5,0);
+ 798:	c1 2c       	mov	r12, r1
+ 79a:	0a e7       	ldi	r16, 0x7A	; 122
+ 79c:	25 e0       	ldi	r18, 0x05	; 5
+ 79e:	4f e5       	ldi	r20, 0x5F	; 95
+ 7a0:	6a e3       	ldi	r22, 0x3A	; 58
+ 7a2:	84 e4       	ldi	r24, 0x44	; 68
+ 7a4:	0e 94 b7 05 	call	0xb6e	; 0xb6e <GUI_DrawTriangel>
+ 7a8:	2f ef       	ldi	r18, 0xFF	; 255
+ 7aa:	83 ed       	ldi	r24, 0xD3	; 211
+ 7ac:	90 e3       	ldi	r25, 0x30	; 48
+ 7ae:	21 50       	subi	r18, 0x01	; 1
+ 7b0:	80 40       	sbci	r24, 0x00	; 0
+ 7b2:	90 40       	sbci	r25, 0x00	; 0
+ 7b4:	e1 f7       	brne	.-8      	; 0x7ae <Test_Triangle+0x52>
+ 7b6:	00 c0       	rjmp	.+0      	; 0x7b8 <Test_Triangle+0x5c>
+ 7b8:	00 00       	nop
+	_delay_ms(1000);
+	GUI_FillTriangel(5,HEIGHT-1-5,WIDTH/2/2-1,5,WIDTH/2-1-5,HEIGHT-1-5,1);
+ 7ba:	cc 24       	eor	r12, r12
+ 7bc:	c3 94       	inc	r12
+ 7be:	0a e3       	ldi	r16, 0x3A	; 58
+ 7c0:	25 e0       	ldi	r18, 0x05	; 5
+ 7c2:	4f e1       	ldi	r20, 0x1F	; 31
+ 7c4:	6a e3       	ldi	r22, 0x3A	; 58
+ 7c6:	85 e0       	ldi	r24, 0x05	; 5
+ 7c8:	0e 94 61 00 	call	0xc2	; 0xc2 <_etext>
+	GUI_FillTriangel(WIDTH/2-1+5,HEIGHT-1-5,WIDTH/2+WIDTH/2/2-1,5,WIDTH-1-5,HEIGHT-1-5,0);
+ 7cc:	c1 2c       	mov	r12, r1
+ 7ce:	0a e7       	ldi	r16, 0x7A	; 122
+ 7d0:	25 e0       	ldi	r18, 0x05	; 5
+ 7d2:	4f e5       	ldi	r20, 0x5F	; 95
+ 7d4:	6a e3       	ldi	r22, 0x3A	; 58
+ 7d6:	84 e4       	ldi	r24, 0x44	; 68
+ 7d8:	0e 94 61 00 	call	0xc2	; 0xc2 <_etext>
+ 7dc:	2f ef       	ldi	r18, 0xFF	; 255
+ 7de:	8d e3       	ldi	r24, 0x3D	; 61
+ 7e0:	99 e4       	ldi	r25, 0x49	; 73
+ 7e2:	21 50       	subi	r18, 0x01	; 1
+ 7e4:	80 40       	sbci	r24, 0x00	; 0
+ 7e6:	90 40       	sbci	r25, 0x00	; 0
+ 7e8:	e1 f7       	brne	.-8      	; 0x7e2 <Test_Triangle+0x86>
+ 7ea:	00 c0       	rjmp	.+0      	; 0x7ec <Test_Triangle+0x90>
+ 7ec:	00 00       	nop
+	_delay_ms(1500);
+}
+ 7ee:	0f 91       	pop	r16
+ 7f0:	ef 90       	pop	r14
+ 7f2:	cf 90       	pop	r12
+ 7f4:	08 95       	ret
+
+Disassembly of section .text.libgcc.div:
+
+00000bfe <__udivmodsi4>:
+ bfe:	a1 e2       	ldi	r26, 0x21	; 33
+ c00:	1a 2e       	mov	r1, r26
+ c02:	aa 1b       	sub	r26, r26
+ c04:	bb 1b       	sub	r27, r27
+ c06:	fd 01       	movw	r30, r26
+ c08:	0d c0       	rjmp	.+26     	; 0xc24 <__udivmodsi4_ep>
+
+00000c0a <__udivmodsi4_loop>:
+ c0a:	aa 1f       	adc	r26, r26
+ c0c:	bb 1f       	adc	r27, r27
+ c0e:	ee 1f       	adc	r30, r30
+ c10:	ff 1f       	adc	r31, r31
+ c12:	a2 17       	cp	r26, r18
+ c14:	b3 07       	cpc	r27, r19
+ c16:	e4 07       	cpc	r30, r20
+ c18:	f5 07       	cpc	r31, r21
+ c1a:	20 f0       	brcs	.+8      	; 0xc24 <__udivmodsi4_ep>
+ c1c:	a2 1b       	sub	r26, r18
+ c1e:	b3 0b       	sbc	r27, r19
+ c20:	e4 0b       	sbc	r30, r20
+ c22:	f5 0b       	sbc	r31, r21
+
+00000c24 <__udivmodsi4_ep>:
+ c24:	66 1f       	adc	r22, r22
+ c26:	77 1f       	adc	r23, r23
+ c28:	88 1f       	adc	r24, r24
+ c2a:	99 1f       	adc	r25, r25
+ c2c:	1a 94       	dec	r1
+ c2e:	69 f7       	brne	.-38     	; 0xc0a <__udivmodsi4_loop>
+ c30:	60 95       	com	r22
+ c32:	70 95       	com	r23
+ c34:	80 95       	com	r24
+ c36:	90 95       	com	r25
+ c38:	9b 01       	movw	r18, r22
+ c3a:	ac 01       	movw	r20, r24
+ c3c:	bd 01       	movw	r22, r26
+ c3e:	cf 01       	movw	r24, r30
+ c40:	08 95       	ret
+
+Disassembly of section .text.libgcc.div:
+
+00000cac <__divmodsi4>:
+ cac:	05 2e       	mov	r0, r21
+ cae:	97 fb       	bst	r25, 7
+ cb0:	1e f4       	brtc	.+6      	; 0xcb8 <__divmodsi4+0xc>
+ cb2:	00 94       	com	r0
+ cb4:	0e 94 ce 06 	call	0xd9c	; 0xd9c <__negsi2>
+ cb8:	57 fd       	sbrc	r21, 7
+ cba:	07 d0       	rcall	.+14     	; 0xcca <__divmodsi4_neg2>
+ cbc:	0e 94 ff 05 	call	0xbfe	; 0xbfe <__udivmodsi4>
+ cc0:	07 fc       	sbrc	r0, 7
+ cc2:	03 d0       	rcall	.+6      	; 0xcca <__divmodsi4_neg2>
+ cc4:	4e f4       	brtc	.+18     	; 0xcd8 <__divmodsi4_exit>
+ cc6:	0c 94 ce 06 	jmp	0xd9c	; 0xd9c <__negsi2>
+
+00000cca <__divmodsi4_neg2>:
+ cca:	50 95       	com	r21
+ ccc:	40 95       	com	r20
+ cce:	30 95       	com	r19
+ cd0:	21 95       	neg	r18
+ cd2:	3f 4f       	sbci	r19, 0xFF	; 255
+ cd4:	4f 4f       	sbci	r20, 0xFF	; 255
+ cd6:	5f 4f       	sbci	r21, 0xFF	; 255
+
+00000cd8 <__divmodsi4_exit>:
+ cd8:	08 95       	ret
+
+Disassembly of section .text.libgcc.div:
+
+00000d9c <__negsi2>:
+ d9c:	90 95       	com	r25
+ d9e:	80 95       	com	r24
+ da0:	70 95       	com	r23
+ da2:	61 95       	neg	r22
+ da4:	7f 4f       	sbci	r23, 0xFF	; 255
+ da6:	8f 4f       	sbci	r24, 0xFF	; 255
+ da8:	9f 4f       	sbci	r25, 0xFF	; 255
+ daa:	08 95       	ret
